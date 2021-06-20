@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Greenvibes</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" type="image/svg" href="img/gv logo favicon green.svg">
 </head>
 <body>
 	<header><h1>Greenvibes</h1></header>
