@@ -4,12 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Greenvibes</title>
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header><h1>Website Name</h1></header>
+	<header><h1>Greenvibes</h1></header>
 	
-
 	<nav>
 		<ul> 
 			<li><a href="index.php">Home</a></li>
@@ -19,5 +18,3 @@
 			<li><a href="blog.php">Blogs</a></li>
 		</ul>
 	</nav>
-
- 

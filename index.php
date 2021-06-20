@@ -1,9 +1,8 @@
-<?php require_once('inc/connection.php'); ?>
+<?php require_once('inc/header.php'); ?>
 
 </head>
 <body>
 	Hello World
 </body>
 </html>
-
-<?php mysqli_close($connection); ?>
+<?php require_once('inc/footer.php'); ?>

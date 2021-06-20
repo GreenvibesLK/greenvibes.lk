@@ -1,0 +1,30 @@
+header {
+
+
+}
+
+header h1{
+	text-align: center;
+}
+
+
+
+nav {
+	flex: 1;
+	text-align: right;
+}
+nav ul li{
+	list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+
+footer{
+
+}
+
+footer p{
+	text-align: center;
+}
