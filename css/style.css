@@ -92,7 +92,8 @@ nav img{
 }
 
 .visit-btn:hover{
-    border: 1px solid #fff122;
+	border-color:  #046307 ;
+    border: 1px solid  #046307;
     background: green;
     transition: 1s;
 }
