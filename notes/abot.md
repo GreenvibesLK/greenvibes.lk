@@ -12,3 +12,5 @@ Our vission-
 Our Vision is to empower entrepreneurs with a roadmap and support that guides them through the transition from start-ups, to micro-enterprises, 
 and on to small and medium-sized businesses that create jobs, lead innovation, and increase economic development in their local communities.
 
+Our mission-
+Incorporating forward thinking with imagination, creativity, and originality to reach our goal to become a leader in software solutions.
