@@ -90,3 +90,13 @@ nav img{
     position: relative;
     cursor: pointer;
 }
+
+.visit-btn:hover{
+    border: 1px solid #fff122;
+    background: green;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}

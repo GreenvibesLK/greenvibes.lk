@@ -1,9 +1,12 @@
 <?php require_once('inc/header.php'); ?>
 
-	<title>Greenvibes</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="shortcut icon" type="image/svg" href="img/gv logo favicon green.svg">
-</head>
+    <div class="text-box">
+        <h1>Make it simple. But significant</h1>
+        <p>ShareTheMeal is a crowdfunding smartphone application to fight global hunger through the United Nations World Food Programme (WFP).</p>
+        <a href="" class="visit-btn">Visit us</a>
+        </div>
+    </section>
+    
 <body>
 
 
