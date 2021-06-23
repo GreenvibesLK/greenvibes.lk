@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>GreenVibes</title>
+	<title><?php echo $title; ?>Greenvibes</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700;800&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 
     </head>
 <body>
-    <section class="header">
+    <section class="header" style="background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../img/<?php echo $headerimg; ?>);">
         <nav>
             <a href="index.php" onclick="hideMenu()"><img src="img/GreenvibesLK white.png">  </a>
             <div class="nav-links" id="navLinks">
