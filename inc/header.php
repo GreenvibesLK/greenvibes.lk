@@ -9,10 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" >
 	<link rel="shortcut icon" type="image/svg" href="img/gv logo favicon green.svg">
-
     </head>
-<body>
-    <section class="header" style="background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../img/<?php echo $headerimg; ?>);">
+<body> 
+    <section class="header")>
         <nav>
             <a href="index.php" onclick="hideMenu()"><img src="img/GreenvibesLK white.png">  </a>
             <div class="nav-links" id="navLinks">
@@ -29,4 +28,4 @@
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>  
-        </nav> 
+        </nav>
