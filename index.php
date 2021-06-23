@@ -1,5 +1,5 @@
 <?php $title = 'Home - '; ?>
-<?php $title = 'home.jpg'; ?>
+<?php $headerimg = 'home.jpg'; ?>
 <?php require_once('inc/header.php'); ?>
 
    <div class="text-box">
