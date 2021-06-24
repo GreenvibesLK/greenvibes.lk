@@ -17,11 +17,7 @@
 
 
 
-
-
-
-<?php $tests = 'cacascac';
-echo $tests ?>
+  
 
 </body>
 </html>

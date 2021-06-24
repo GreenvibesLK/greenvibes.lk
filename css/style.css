@@ -99,7 +99,14 @@ nav .fa{
     display: none;
 }
 
-@media(max-width: 1150px){
+
+
+
+
+
+
+
+@media(max-width: 700px){
     .text-box h1{
     font-size:20px;}
     
@@ -130,7 +137,8 @@ nav .fa{
 }
 
 
-@media(max-width: 1000px) {
+@media(max-width: 700
+    px) {
     .text-box h1{
         font-size:20px;}
 
@@ -138,6 +146,7 @@ nav .fa{
         display: block;
     }
 }
+
 
 
 /*Responsive*/
