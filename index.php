@@ -20,8 +20,10 @@
 
 
 
-
+<?php $tests = 'cacascac';
+echo $tests ?>
 
 </body>
 </html>
 <?php require_once('inc/footer.php'); ?>
+

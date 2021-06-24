@@ -99,14 +99,6 @@ nav .fa{
     display: none;
 }
 
-
-
-
-
-
-
-/*Responsive*/
-
 @media(max-width: 1150px){
     .text-box h1{
     font-size:20px;}
@@ -136,3 +128,17 @@ nav .fa{
         padding: 30px;
     }
 }
+
+
+@media(max-width: 1000px) {
+    .text-box h1{
+        font-size:20px;}
+
+    .nav-links ul li{
+        display: block;
+    }
+}
+
+
+/*Responsive*/
+
