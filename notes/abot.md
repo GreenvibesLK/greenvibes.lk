@@ -40,3 +40,4 @@ To take the brand to the next level, a business should apply diverse marketing s
 Traditional methods focused on television and radio commercials as well as newspaper ads or simply putting marketing material in a mailbox and hoping for the best do not work anymore.
 
 Though advertising via television can still have some impact, there are numerous digital marketing strategies that can have a more direct and closer influence on the public.
+
