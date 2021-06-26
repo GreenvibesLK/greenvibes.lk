@@ -42,3 +42,4 @@ Though advertising via television can still have some impact, there are numerous
 </body>
 </html>
 <?php require_once('inc/footer.php'); ?>
+
