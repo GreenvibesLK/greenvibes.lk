@@ -12,7 +12,8 @@
     </section>
 <body>
 
-<h2>About Greenvibes Technologies</h2>
+<section class="content">
+<h2>About Us</h2>
 <p>We are Greenvibes Technologies. A team with a diversified and forward thinking capabilities in the field of software with the elements of creating unique solutions.
 
 Just as machines have extended man's mechanical power and his convenience and comfort, Information Technology as commonly pictured by computers, 
@@ -29,7 +30,7 @@ and on to small and medium-sized businesses that create jobs, lead innovation, a
 <h2>Our Mission</h2>
 <p>Incorporating forward thinking with imagination, creativity, and originality to reach our goal to become a leader in software solutions.
 </p>
-
+</section>
 </body>
 </html>
 <?php require_once('inc/footer.php'); ?>
