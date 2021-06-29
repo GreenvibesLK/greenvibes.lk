@@ -1,5 +1,5 @@
 
-	<footer>
+	<footer ="footer">
         <h4>Greenvibes Technologies</h4>
 		<p>greenvibesLK 2021 copyright reserved</p>
 	</footer>
