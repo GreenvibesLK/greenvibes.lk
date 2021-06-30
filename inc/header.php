@@ -26,5 +26,5 @@
                     <li><a href="contact.php">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>  
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
