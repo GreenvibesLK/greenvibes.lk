@@ -22,9 +22,9 @@
       if ( mysqli_num_rows($result_set) == 1){
         // prepare to display the record
         $blog_post = mysqli_fetch_assoc($result_set);
-        $blog_title = $blog_post['blog_title'];
-        $blog_date = $blog_post['blog_date'];
-        $blog_text = $blog_post['blog_text'];
+        $blog_title = stripcslashes($blog_post['blog_title']);
+        $blog_date = stripcslashes($blog_post['blog_date']);
+        $blog_text = stripcslashes($blog_post['blog_text']);
 
       }
     }
@@ -59,7 +59,7 @@
     <div class="newsblog">
         <h1><?php echo $blog_title; ?></h1>
         <p class="newsdate">DATE POSTED :<?php echo $blog_date ?></p><br>
-        <?php echo stripcslashes($blog_text); ?>
+        <?php echo ($blog_text); ?>
 
     </div>
 
@@ -71,3 +71,5 @@
 
 </body>
 </html>
+
+<?php require_once('inc/footer.php') ?>
