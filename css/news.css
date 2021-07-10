@@ -4,6 +4,38 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
-	padding: 10px;
+div.newsblog {
+	width: 60%;
+	float: left;
+	padding: 20px;
+}
+
+div.newsblog h1 {
+	font-size: 48px;
+	letter-spacing: -3px;
+}
+
+
+p.newsdate {
+	font-size:  14px;
+}
+
+div.newsnav {
+	width: 30%;
+	float: right;
+	padding: 20px;
+	border-left:1px solid #eee ;
+}
+
+div.newsnav h2  {
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+div.newsnav ul {
+	margin-left: 20px;
+}
+
+div.newsnav ul li {
+	margin-bottom: 15px;
 }
