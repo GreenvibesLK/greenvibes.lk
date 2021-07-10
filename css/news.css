@@ -39,3 +39,8 @@ div.newsnav ul {
 div.newsnav ul li {
 	margin-bottom: 15px;
 }
+
+div.newsnav ul li a {
+	color: red;
+
+}

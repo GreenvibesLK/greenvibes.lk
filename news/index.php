@@ -13,7 +13,7 @@
     
   } else {
     //getting the latest blog post
-    $query = "SELECT * FROM blog ORDER BY blog_id LIMIT 1";
+    $query = "SELECT * FROM blog ORDER BY blog_id DESC LIMIT 1";
   }
   //executing the query
   $result_set = mysqli_query($connection, $query);
@@ -28,13 +28,15 @@
 
       }
     }
-    //preparing a list of previous post 
+    //preparing a list of previous posts
     $query = "SELECT blog_id, blog_short_title FROM blog ORDER BY blog_id LIMIT 10";
-    $resul_set = mysqli_query($connection, $query);
+    $result_set = mysqli_query($connection, $query);
     $blog_nav = '<ul>';
     if ( $result_set ) {
       if ( mysqli_num_rows($result_set) > 0 ){
-        while ( $result = mysqli_fetch_assoc($result_set))
+        while ( $result = mysqli_fetch_assoc($result_set)){
+          $blog_nav.= '<li><a href="index.php?blog_id=' . $result['blog_id'] . ' "> ' . $result['blog_short_title'] . '</a></li>';
+        }
       }
     }
     $blog_nav .= '</ul>';
@@ -57,19 +59,13 @@
     <div class="newsblog">
         <h1><?php echo $blog_title; ?></h1>
         <p class="newsdate"><?php echo $blog_date ?></p><br>
-        <?php echo $blog_text; ?>
+        <?php echo stripcslashes($blog_text); ?>
 
     </div>
 
     <div class="newsnav">
       <h2>PREVIOUS NEWS</h2>
-      <ul>
-        <li><a href="#">LINK 01</a></li>
-        <li><a href="#">LINK 01</a></li>
-        <li><a href="#">LINK 01</a></li>
-        <li><a href="#">LINK 01</a></li>
-        <li><a href="#">LINK 01</a></li>
-      </ul>
+      <?php echo stripcslashes($blog_nav); ?>
     </div>
   </div>
 
