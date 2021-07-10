@@ -5,7 +5,7 @@
 }
 
 div.newsblog {
-	width: 60%;
+	width: 65%;
 	float: left;
 	padding: 20px;
 }
@@ -44,3 +44,14 @@ div.newsnav ul li a {
 	color: red;
 
 }
+
+
+section {
+	align-content: center;
+}
+section.footer {
+	color: blue;
+	width: 100%;
+	align-items: ;
+}
+

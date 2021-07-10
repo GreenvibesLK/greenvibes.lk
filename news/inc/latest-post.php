@@ -17,16 +17,18 @@
 		while ( $result = mysqli_fetch_assoc($result_set)){
 			$blog_title = $result['blog_short_title'];
 			$blog_date = $result['blog_date'];
-			$blog_text = substr($result['blog_text'], 0, 150);
+			$blog_text = strip_tags(substr($result['blog_text'], 0, 150));
 			//preparing the html
-			$latest_post .= '<div>';
+			$latest_post = '<div>';
 			$latest_post .= '<h5>' . $blog_title . '</h5>';
 			$latest_post .= $blog_date;
 			$latest_post .= '</div>';
 			$latest_post .= '<p>' . $blog_text . '</p>';
-			$latest_post .= '<a href="" class="readmore"> Read more &raquo;</a>';
+			$latest_post .= '<a href="index.php?blog_id='.$blog_id.'" class="readmore"> Read more &raquo;</a>';
 			$latest_post .= '</div>';
+			echo $latest_post;
+			echo '<br><br>';
 		}
 	}
-	echo $latest_post;
+	
  ?>

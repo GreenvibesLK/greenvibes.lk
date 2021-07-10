@@ -35,7 +35,7 @@
     if ( $result_set ) {
       if ( mysqli_num_rows($result_set) > 0 ){
         while ( $result = mysqli_fetch_assoc($result_set)){
-          $blog_nav.= '<li><a href="index.php?blog_id=' . $result['blog_id'] . ' "> ' . $result['blog_short_title'] . '</a></li>';
+          $blog_nav.= '<li><a href="index.php?blog_id='.$result['blog_id'].'"> ' . $result['blog_short_title'] . '</a></li>';
         }
       }
     }
@@ -68,8 +68,8 @@
       <?php echo stripcslashes($blog_nav); ?>
     </div>
   </div>
-
+  <br><br><br><br><br><br><br><br>
+<?php require_once('inc/footer.php') ?>
 </body>
 </html>
 
-<?php require_once('inc/footer.php') ?>
