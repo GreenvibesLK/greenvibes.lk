@@ -58,7 +58,7 @@
   <div class="content">
     <div class="newsblog">
         <h1><?php echo $blog_title; ?></h1>
-        <p class="newsdate"><?php echo $blog_date ?></p><br>
+        <p class="newsdate">DATE POSTED :<?php echo $blog_date ?></p><br>
         <?php echo stripcslashes($blog_text); ?>
 
     </div>
