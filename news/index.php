@@ -54,7 +54,13 @@
   <title>NEWS</title>
 </head>
 <body>
+<section class="navigation">
+  <h4>Greenvibes Technologies</h4>
+</section>
   
+<div class="add">
+  
+</div>
   <div class="content">
     <div class="newsblog">
         <h1><?php echo $blog_title; ?></h1>
