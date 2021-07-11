@@ -58,16 +58,11 @@
 <body>
 <section class="navigation">
   <h4>Greenvibes Technologies</h4>
-  <ul>
-    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-  </ul>
+
 </section>
 
 <div class="add">
-  <p>Advertizing Area</p>
+  <p>Advertising area</p>
 </div><br><br><hr>
 
   <div class="content">
@@ -86,7 +81,7 @@
   </div>
 
 
-<!-- <?php require_once('inc/footer.php') ?> -->
+<?php require_once('inc/footer.php') ?>
 </body>
 </html>
 
