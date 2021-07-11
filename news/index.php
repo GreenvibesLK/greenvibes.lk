@@ -49,6 +49,7 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="../css/news.css">
+  <link rel="stylesheet" href="../fontawesome/css/all.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NEWS</title>
@@ -56,26 +57,34 @@
 <body>
 <section class="navigation">
   <h4>Greenvibes Technologies</h4>
+  <ul>
+    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+  </ul>
 </section>
-  
+
 <div class="add">
-  
+  <p>Advertizing Area</p>
 </div><br><br><hr>
+
   <div class="content">
     <div class="newsblog">
         <h1><?php echo $blog_title; ?></h1>
         <p class="newsdate">DATE POSTED :<?php echo $blog_date ?></p><br>
         <?php echo ($blog_text); ?>
-
     </div>
+
 
     <div class="newsnav">
       <h2>PREVIOUS NEWS</h2>
       <?php echo stripcslashes($blog_nav); ?>
     </div>
   </div>
-  <br><br><br><br><br><br><br><br>
-<?php require_once('inc/footer.php') ?>
+
+
+<!-- <?php require_once('inc/footer.php') ?> -->
 </body>
 </html>
 

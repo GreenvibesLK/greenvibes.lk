@@ -1,3 +1,3 @@
-<section class="footer">
-	<?php require_once('latest-post.php') ?>
-</section>
+<footer class="footer">
+	Greenvibes Technologies 2021 Alrights Receved
+</footer>
