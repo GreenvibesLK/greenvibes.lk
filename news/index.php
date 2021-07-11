@@ -25,6 +25,7 @@
         $blog_title = stripcslashes($blog_post['blog_title']);
         $blog_date = stripcslashes($blog_post['blog_date']);
         $blog_text = stripcslashes($blog_post['blog_text']);
+        $blog_img = $blog_post['blog_img'];
 
       }
     }
@@ -73,6 +74,7 @@
     <div class="newsblog">
         <h1><?php echo $blog_title; ?></h1>
         <p class="newsdate">DATE POSTED :<?php echo $blog_date ?></p><br>
+        <?php echo '<img src="'.$blog_img.'" alt="">'?>;
         <?php echo ($blog_text); ?>
     </div>
 

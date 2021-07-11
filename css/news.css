@@ -5,49 +5,59 @@
 }
 
 section.navigation {
-	position: relative;
-	width: 100%;
-	height: 80px;
-	background-color: green;
+  overflow: hidden;
+  background-color: green;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 section.navigation h4 {
+	width: 50%;
+	margin: auto;
+	margin-top: 30px;
 	text-align: center;
-	padding: 20px 10px 30px;
  	color: white;
- 	font-size: 30px;
+ 	font-size: 40px;
  	letter-spacing: 3px;
  	text-transform: uppercase;
 
 }
 
 section.navigation ul {
-	position: relative;
-	flex: 1;
-    text-align: center;
+	margin-right: 20px;
+	float: right;
 }
 
 section.navigation ul li {
-	font-size: 20px;
 	list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 8px 12px 20px;
     position: relative;
+}
+
+section.navigation ul li a i {
+	font-size: 20px;
+	color: white;
+	transition: 0.2s;
+}
+
+section.navigation ul li a i:hover {
+	color: lightblue;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 div.add {
 	font-size: 30px;
 	display: flex;
 	justify-content: center;
-	position: relative;
 	align-items: center;
 	float: center;
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 200px;
 	width: 70%;
 	height: 200px;
 	background-color: gray;
-	opacity: 40%;
 }
 
 hr {
@@ -70,10 +80,17 @@ div.newsblog h1 {
 	letter-spacing: -3px;
 }
 
+div.newsblog img{
+ width: 100%;
+ margin: 10px;
+}
 
 p.newsdate {
 	font-size:  14px;
 }
+
+
+
 
 div.newsnav {
 	width: 30%;
@@ -97,7 +114,6 @@ div.newsnav ul li {
 
 div.newsnav ul li a {
 	color: red;
-
 }
 
 
@@ -105,7 +121,7 @@ div.newsnav ul li a {
 
 
 
-@media(max-width: 900px) {
+@media(max-width: 1000px) {
 
 	section.navigation {
 		width: 100%;
