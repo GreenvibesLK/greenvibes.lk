@@ -60,7 +60,7 @@
   
 <div class="add">
   
-</div>
+</div><br><br><hr>
   <div class="content">
     <div class="newsblog">
         <h1><?php echo $blog_title; ?></h1>

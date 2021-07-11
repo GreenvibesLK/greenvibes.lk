@@ -72,21 +72,34 @@ section.navigation h4 {
 
 }
 
+
+div.add {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	align-items: center;
+	float: center;
+	margin-top: 40px;
+	margin-left: 50px;
+	margin-bottom: 30px;
+	width: 70%;
+	height: 200px;
+	background-color: gray;
+	opacity: 20%;
+}
+
+hr {
+
+	width: 1200px;
+}
+
 @media(max-width: 900px) {
 	section.navigation h4 {
 		font-size: 20px;
 		padding: 30px;
-
 	}
-}
 
-div.add {
-	border-bottom: 1px solid #eee;
-	margin-top: 40px;
-	margin-left: 400px;
-	margin-bottom: 30px;
-	width: 1000px;
-	height: 200px;
-	background-color: gray;
-	opacity: 20%;
+	div.add {
+	
+	}
 }
