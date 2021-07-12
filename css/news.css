@@ -13,6 +13,13 @@ section.navigation {
   width: 100%;
 }
 
+section.navigation i {
+	color: white;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
 section.navigation h4 {
 	margin: auto;
 	margin-top: 30px;
