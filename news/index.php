@@ -41,8 +41,6 @@
       }
     }
     $blog_nav .= '</ul>';
-
-
  ?>
 
 
@@ -53,11 +51,11 @@
   <link rel="stylesheet" href="../fontawesome/css/all.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NEWS</title>
+  <title>NEWS - <?php echo $blog_title ?></title>
 </head>
 <body>
 <section class="navigation">
-  <i class="fas fa-bars"></i>
+  <a href="../index.php"><i class="fas fa-home"></i></a>
   <h4>Greenvibes Technologies</h4>
 
 </section>
@@ -81,6 +79,11 @@
     </div>
   </div>
 
+<hr>
+<h3 id="latest">LATEST NEWS</h3>
+<div class="latest">
+  <?php require_once('inc/latest-post.php') ?> 
+</div> 
 
 <?php require_once('inc/footer.php') ?>
 </body>

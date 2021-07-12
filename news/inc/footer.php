@@ -1,5 +1,5 @@
 <footer>
-	<p>© Greenvibes Technologies 2021 Alrights Receved
+	<p>© Greenvibes Technologies | 2021 Alrights Receved
 	</p>
   <ul>
     <li><a href="https://fb.com/greenvibeslk"><i class="fab fa-facebook-f"></i></a></li>

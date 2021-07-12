@@ -1,11 +1,12 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 section.navigation {
+	display: flex;
   overflow: hidden;
   background-color: green;
   position: fixed;
@@ -15,15 +16,17 @@ section.navigation {
 
 section.navigation i {
 	color: white;
-	font-size: 20px;
+	font-size: 30px;
 	padding-left: 20px;
-	padding-top: 20px;
+	padding-top: 30px;
+	transition: .0.2s;
 }
 
 section.navigation h4 {
-	margin: auto;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin:0 auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-right: 35px;
 	text-align: center;
  	color: white;
  	font-size: 40px;
@@ -63,7 +66,7 @@ div.newsblog {
 
 div.newsblog h1 {
 	font-size: 48px;
-	letter-spacing: -3px;
+	letter-spacing: -2px;
 }
 
 div.newsblog img{
@@ -108,15 +111,16 @@ div.content:after {
 	clear: both;
 }
 
-
+/*responsive*/
 @media(max-width: 1000px) {
 
-	section.navigation {
-		width: 100%;
-	}
 	section.navigation h4 {
 		font-size: 30px;
-		letter-spacing: -1px;
+		letter-spacing: 1px;
+	}
+
+	section.navigation i {
+		font-size: 25;
 	}
 
 	div.newsblog {
@@ -125,13 +129,55 @@ div.content:after {
 		margin: auto;
 	}
 
+	div.newsblog h1{
+		font-size: 28px;
+	}
+
 	div.newsnav {
 		width: 100%;
 }
 }
 
+@media(max-width: 600px){
+	section.navigation h4 {
+		font-size: 20px;
+		letter-spacing: 1px;
+		}
+
+		section.navigation i {
+			font-size: 18px;
+		}
+	
+
+}
+
+/*latest post*/
+div.latest {
+	padding-left: 70px;
+	padding-bottom: 30px;
+}
+
+#latest{
+ text-align: center;
+}
+
+div.latest_column{
+	margin: 10px;
+	float: left;
+  width: 30%;
+  padding: 10px;
+  height: 300px;
+}
+
+div.latest:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
+
+/*news footer*/
 footer {
 	width: 100%;
 	height: 200px;
@@ -162,7 +208,7 @@ footer ul li a i {
 	transition: 0.2s;
 }
 
-footer ul li a i:hover {
+footer ul li a i:hover,section.navigation i:hover {
 	color: lightblue;
-	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkgreen;
 }
