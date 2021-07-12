@@ -57,7 +57,7 @@
 </head>
 <body>
 <section class="navigation">
-  <h4>Greenvibes Technologies</h4>
+  <h4  onclick="function">Greenvibes Technologies</h4>
 
 </section>
 
@@ -82,6 +82,14 @@
 
 
 <?php require_once('inc/footer.php') ?>
+
+
+
+<script>
+  function URL() {
+    location.href = 'http://your.url.here';
+}
+</script>
 </body>
 </html>
 
