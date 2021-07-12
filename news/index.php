@@ -47,6 +47,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" href="../img/gv logo favicon green.svg">
   <link rel="stylesheet" href="../css/news.css">
   <link rel="stylesheet" href="../fontawesome/css/all.css">
   <meta charset="UTF-8">
@@ -76,6 +77,16 @@
     <div class="newsnav">
       <h2>PREVIOUS NEWS</h2>
       <?php echo stripcslashes($blog_nav); ?>
+      <br>
+
+      <div class="add addn">
+        <p>Advertising area</p>
+      </div>
+
+      <div class="add addn">
+        <p>Advertising area</p>
+      </div>
+
     </div>
   </div>
 
@@ -84,6 +95,10 @@
 <div class="latest">
   <?php require_once('inc/latest-post.php') ?> 
 </div> 
+
+<div class="add addn">
+  <p>Advertising area</p>
+</div><br><br>
 
 <?php require_once('inc/footer.php') ?>
 </body>
