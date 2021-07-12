@@ -139,6 +139,9 @@ div.content:after {
 }
 
 @media(max-width: 600px){
+	*{
+		margin: 0;
+	}
 	section.navigation h4 {
 		font-size: 20px;
 		letter-spacing: 1px;
@@ -153,26 +156,69 @@ div.content:after {
 
 /*latest post*/
 div.latest {
-	padding-left: 70px;
+	margin-left: 50px;
 	padding-bottom: 30px;
 }
 
 #latest{
- text-align: center;
+	padding-top: 10px;
+	text-align: center;
 }
 
 div.latest_column{
+	color: white;
+	background-size: cover;
+	box-sizing: border-box;
+	border-radius: 10px;
 	margin: 10px;
 	float: left;
-  width: 30%;
-  padding: 10px;
+  width: 400px;
+  padding: 20px;
+  padding-top: 150px;
   height: 300px;
+  transition: 0.5s;
 }
+
+div.latest_column h5 {
+	margin: 10px 0 10px 20px;
+	text-align: center;
+	font-size: 20px;
+
+}
+
+div.latest_column p {
+	margin: 20px;
+	text-align: center;
+}
+
+div.latest_column h6 {
+	float: left;
+  width: 25;
+  opacity: 50%;
+}
+
+div.latest_column a{
+	float: right;
+  background-color: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
 
 div.latest:after {
   content: "";
   display: table;
   clear: both;
+}
+
+div.latest_column:hover{
+	padding-top: 140px;
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
 }
 
 

@@ -18,23 +18,17 @@
 			$blog_id = $result['blog_id'];
 			$blog_title = $result['blog_short_title'];
 			$blog_date = $result['blog_date'];
-			$blog_text = strip_tags(substr($result['blog_text'], 0, 150));
+			$blog_text = strip_tags(substr($result['blog_text'], 0, 120));
 			$blog_img = $result['blog_img'];
-
 			//preparing the html
-			$latest_post = '<div class="latest_column">';
+			$latest_post = '<div class="latest_column"';
+			$latest_post .= ' style="background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,136,0,1)), url('.$blog_img.');">';
 			$latest_post .= '<h5>' . $blog_title . '</h5>';
-			$latest_post .= $blog_date;
-			$latest_post .= '<p>' . $blog_text . '</p>';
+			$latest_post .= '<p>' . $blog_text . '...</p>';
+			$latest_post .= '<h6>' . $blog_date . '</h6>';
 			$latest_post .= '<a href="index.php?blog_id='.$blog_id.'" class="readmore"> Read more &raquo;</a>';
 			$latest_post .= '</div>';
 			echo $latest_post;
 		}
 	}
-	
  ?>
-<style>
- 	.latest_column{
- 		background-image: linear-gradient(rgba(2,0,36,0.1),rgba(9,121,30,0.1)),url();}
- 	}
- </style>
