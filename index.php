@@ -14,9 +14,10 @@
 <section class="content">
   
 
-
-
 </section>
+
+
+
 </body>
 </html>
 <?php require_once('inc/footer.php'); ?>

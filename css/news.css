@@ -142,6 +142,8 @@ div.latest_column{
 }
 
 div.latest_column h5 {
+	padding: 2px 5px;
+	background-color: green;
 	margin: 10px 0 10px 20px;
 	text-align: center;
 	font-size: 20px;
@@ -155,7 +157,7 @@ div.latest_column p {
 
 div.latest_column h6 {
 	float: left;
-  width: 25;
+  width: 50%;
   opacity: 80%;
 }
 
@@ -169,8 +171,12 @@ div.latest_column a{
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  transition: 0.5s;
 }
 
+div.latest_column a:hover{
+	background-color: darkred;
+}
 
 div.latest:after {
   content: "";
@@ -238,24 +244,24 @@ div.latest_column:hover{
 
 
 /*news footer*/
-footer {
+footer.fnews {
 	width: 100%;
 	height: 200px;
 	background-color: green;
 	text-align: center;
 }
 
-footer p {
+footer.fnews p {
 	color: white;
 	padding-top: 50px;
 }
 
-footer ul {
+footer.fnews ul {
 	padding-top: 60px;
 	margin:auto;
 }
 
-footer ul li {
+footer.fnews ul li {
 	list-style: none;
     display: inline-block;
     padding: 8px 12px 20px;

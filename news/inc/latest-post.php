@@ -1,8 +1,9 @@
+<div class="latest">
 <?php 
 	//checking if the connection already created
 	if (!isset($connection)){
 		//connecting to the database
-		$connection = mysqli_connect('localhost', 'root','','blog');
+		$connection = mysqli_connect('localhost', 'root','','news');
 		//checking the connection
 		if ( !$connection ) {
 			die("Error -Database connection failed");
@@ -32,3 +33,4 @@
 		}
 	}
  ?>
+ </div>

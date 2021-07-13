@@ -1,4 +1,4 @@
-<footer>
+<footer class="fnews">
 	<p>© Greenvibes Technologies | 2021 Alrights Receved
 	</p>
   <ul>

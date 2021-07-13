@@ -91,10 +91,10 @@
   </div>
 
 <hr>
+<br>
 <h3 id="latest">LATEST NEWS</h3>
-<div class="latest">
-  <?php require_once('inc/latest-post.php') ?> 
-</div> 
+<?php require_once('inc/latest-post.php') ?> 
+
 
 <div class="add addn">
   <p>Advertising area</p>
