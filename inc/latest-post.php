@@ -1,3 +1,6 @@
+<hr>
+<br>
+<h3 id="latest">LATEST NEWS</h3>
 <div class="latest">
 <?php 
 	//checking if the connection already created

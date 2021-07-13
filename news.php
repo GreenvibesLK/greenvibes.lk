@@ -93,9 +93,8 @@
     </div>
   </div>
 
-<hr>
-<br>
-<h3 id="latest">LATEST NEWS</h3>
+
+
 <?php require_once('inc/latest-post.php') ?> 
 
 

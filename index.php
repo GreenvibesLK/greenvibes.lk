@@ -16,9 +16,7 @@
 
 
 </section>
-<hr>
-<br>
-<h3 id="latest">LATEST NEWS</h3>
+
 <?php require_once('inc/latest-post.php'); ?>
 
 <?php require_once('inc/footer.php'); ?>
