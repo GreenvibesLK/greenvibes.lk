@@ -8,3 +8,5 @@
     <li><a href="https://api.whatsapp.com/send/?phone=%2B94768623177&text&app_absent=0"><i class="fab fa-whatsapp"></i></a></li>
   </ul>
 </footer>
+</body>
+</html>

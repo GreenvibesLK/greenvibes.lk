@@ -47,9 +47,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="../img/gv logo favicon green.svg">
-  <link rel="stylesheet" href="../css/news.css">
-  <link rel="stylesheet" href="../fontawesome/css/all.css">
+  <link rel="icon" href="img/gv logo favicon green.svg">
+  <link rel="stylesheet" href="css/news.css">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,800;1,900&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
@@ -58,7 +58,7 @@
 </head>
 <body>
 <section class="navigation">
-  <a href="../index.php"><i class="fas fa-home"></i></a>
+  <a href="index.php"><i class="fas fa-home"></i></a>
   <h4>Greenvibes Technologies</h4>
 
 </section>
@@ -71,7 +71,7 @@
     <div class="newsblog">
         <h1><?php echo $blog_title; ?></h1>
         <p class="newsdate">DATE POSTED :<?php echo $blog_date ?></p><br>
-        <?php echo '<img src="'.$blog_img.'" alt="">'?>;
+        <?php echo '<img src="img/'.$blog_img.'" alt="">'?>;
         <?php echo ($blog_text); ?>
     </div>
 
@@ -103,6 +103,3 @@
 </div><br><br>
 
 <?php require_once('inc/footer.php') ?>
-</body>
-</html>
-
