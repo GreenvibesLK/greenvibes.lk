@@ -19,8 +19,13 @@ section.navigation i {
 	font-size: 30px;
 	padding-left: 30px;
 	padding-top: 40px;
-	transition: .0.2s;
+	transition: 0.5s;
 }
+
+section.navigation i:hover {
+    color: green;
+}
+
 
 section.navigation h4 {
 	margin:0 auto;
@@ -220,6 +225,7 @@ div.latest_column:hover{
 
 	section.navigation i {
 		font-size: 25;
+		transition: 0.5s;
 	}
 
 	div.newsblog {

@@ -1,6 +1,6 @@
 <?php 
   //connecting to the database
-  $connection = mysqli_connect('localhost','root','','news');
+  $connection = mysqli_connect('localhost','root','','blog');
   //checking the connection
   if (!$connection) {
     die("Error - Database Connection failed");
