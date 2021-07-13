@@ -3,12 +3,11 @@
 	//checking if the connection already created
 	if (!isset($connection)){
 		//connecting to the database
-		$connection = mysqli_connect('localhost', 'root','','blog');
+		require_once('connection.php');
 		//checking the connection
 		if ( !$connection ) {
 			die("Error -Database connection failed");
 		}
-
 	}
 
 	$query = "SELECT * FROM blog ORDER BY blog_id DESC LIMIT 3";

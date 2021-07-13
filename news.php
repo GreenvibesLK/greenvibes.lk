@@ -1,6 +1,6 @@
 <?php 
   //connecting to the database
-  $connection = mysqli_connect('localhost','root','','blog');
+  require_once('inc/connection.php');
   //checking the connection
   if (!$connection) {
     die("Error - Database Connection failed");
@@ -44,7 +44,6 @@
     $blog_nav .= '</ul>';
  ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,7 +55,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,800;1,900&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NEWS - <?php echo $blog_title ?></title>
+  <title>News - <?php echo $blog_title ?></title>
 </head>
 <body>
 <section class="navigation">
@@ -83,13 +82,13 @@
       <?php echo stripcslashes($blog_nav); ?>
       <br>
 
-      <div class="add addn">
+<!--       <div class="add addn">
         <p>Advertising area</p>
       </div>
 
       <div class="add addn">
         <p>Advertising area</p>
-      </div>
+      </div> -->
 
     </div>
   </div>
