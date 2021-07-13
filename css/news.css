@@ -106,9 +106,6 @@ p.newsdate {
 	font-size:  14px;
 }
 
-
-
-
 div.newsnav {
 	width: 30%;
 	float: right;
@@ -130,7 +127,14 @@ div.newsnav ul li {
 }
 
 div.newsnav ul li a {
-	color: red;
+	color: green;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+div.newsnav ul li a:hover{
+	color: #FF5733;
+	text-decoration: underline;
 }
 
 div.newscontent:after {
