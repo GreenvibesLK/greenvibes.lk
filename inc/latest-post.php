@@ -23,11 +23,11 @@
 			$blog_img = $result['blog_img'];
 			//preparing the html
 			$latest_post = '<div class="latest_column"';
-			$latest_post .= ' style="background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)), url('.$blog_img.');">';
+			$latest_post .= ' style="background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)), url(img/'.$blog_img.');">';
 			$latest_post .= '<h5>' . $blog_title . '</h5>';
 			$latest_post .= '<p>' . $blog_text . '...</p>';
 			$latest_post .= '<h6>POST DATE:  ' . $blog_date . '</h6>';
-			$latest_post .= '<a href="index.php?blog_id='.$blog_id.'" class="readmore"> Read more &raquo;</a>';
+			$latest_post .= '<a href="news.php?blog_id='.$blog_id.'" class="readmore"> Read more &raquo;</a>';
 			$latest_post .= '</div>';
 			echo $latest_post;
 		}
