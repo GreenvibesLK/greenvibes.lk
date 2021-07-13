@@ -9,7 +9,6 @@
   </ul>
 </footer>
 
-
   <!-- responsive -->
 <script>
     var navLinks = document.getElementById("navLinks");

@@ -5,7 +5,6 @@
     $dbname = "greenvi_blog";
     $connection = mysqli_connect($server, $user, $pass, $dbname);
  ?> -->
-
  <?php 
  	$server = "localhost";
 	$user = "root";
