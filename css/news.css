@@ -92,6 +92,10 @@ div.newsblog img {
  margin: 10px;
 }
 
+div.newsblog h5{
+	float: right;
+}
+
 p.newsdate {
 	padding: 10px 5px;
 	font-size:  14px;

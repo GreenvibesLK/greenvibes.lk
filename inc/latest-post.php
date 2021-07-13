@@ -21,6 +21,7 @@
 			$blog_date = $result['blog_date'];
 			$blog_text =  substr(strip_tags($result['blog_text']), 0, 100);
 			$blog_img = $result['blog_img'];
+			
 			//preparing the html
 			$latest_post = '<div class="latest_column"';
 			$latest_post .= ' style="background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)), url(img/'.$blog_img.');">';

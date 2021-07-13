@@ -26,9 +26,10 @@
         $blog_date = stripcslashes($blog_post['blog_date']);
         $blog_text = stripcslashes($blog_post['blog_text']);
         $blog_img = $blog_post['blog_img'];
-
+        $created_by = $blog_post['created_by'];
       }
     }
+
     //preparing a list of previous posts
     $query = "SELECT blog_id, blog_short_title FROM blog ORDER BY blog_id LIMIT 10";
     $result_set = mysqli_query($connection, $query);
@@ -72,7 +73,8 @@
         <h1><?php echo $blog_title; ?></h1>
         <p class="newsdate">DATE POSTED :<?php echo $blog_date ?></p><br>
         <?php echo '<img src="img/'.$blog_img.'" alt="">'?>
-        <?php echo ($blog_text); ?>
+        <?php echo $blog_text; ?> <br>
+        <h5>Published by :  <?php echo $created_by; ?></h5>
     </div>
 
 
