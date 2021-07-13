@@ -8,7 +8,7 @@
 section.navigation {
 	display: flex;
   overflow: hidden;
-  background-color: green;
+  background-color: #50C878;
   position: fixed;
   top: 0;
   width: 100%;
@@ -17,7 +17,7 @@ section.navigation {
 section.navigation i {
 	color: white;
 	font-size: 30px;
-	padding-left: 20px;
+	padding-left: 30px;
 	padding-top: 30px;
 	transition: .0.2s;
 }
@@ -79,6 +79,7 @@ div.newsblog img{
 }
 
 p.newsdate {
+	padding: 10px 5px;
 	font-size:  14px;
 }
 
@@ -143,7 +144,7 @@ div.latest_column{
 
 div.latest_column h5 {
 	padding: 2px 5px;
-	background-color: green;
+	background-color: #50C878;
 	margin: 10px 0 10px 20px;
 	text-align: center;
 	font-size: 20px;
@@ -175,7 +176,7 @@ div.latest_column a{
 }
 
 div.latest_column a:hover{
-	background-color: darkred;
+	background-color: #FF5733;
 }
 
 div.latest:after {
@@ -247,7 +248,7 @@ div.latest_column:hover{
 footer.fnews {
 	width: 100%;
 	height: 200px;
-	background-color: green;
+	background-color: #50C878;
 	text-align: center;
 }
 
@@ -275,6 +276,5 @@ footer ul li a i {
 }
 
 footer ul li a i:hover,section.navigation i:hover {
-	color: #ccc;
-	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkgreen;
+	color: green;
 }
