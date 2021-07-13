@@ -61,14 +61,13 @@
 <section class="navigation">
   <a href="index.php"><i class="fas fa-home"></i></a>
   <h4>Greenvibes Technologies</h4>
-
 </section>
 
 <div class="add">
   <p>Advertising area</p>
 </div><br><br><hr>
 
-  <div class="content">
+  <div class="newscontent">
     <div class="newsblog">
         <h1><?php echo $blog_title; ?></h1>
         <p class="newsdate">DATE POSTED :<?php echo $blog_date ?></p><br>
