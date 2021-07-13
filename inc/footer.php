@@ -1,4 +1,4 @@
-<footer class="fnews">
+<footer>
 	<p>Copyright © 2021 Greenvibes Technologies
 	</p>
   <ul>

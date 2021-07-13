@@ -14,11 +14,12 @@
 <section class="content">
   
 
+
 </section>
+<hr>
+<br>
+<h3 id="latest">LATEST NEWS</h3>
+<?php require_once('inc/latest-post.php'); ?>
 
-
-
-</body>
-</html>
 <?php require_once('inc/footer.php'); ?>
  

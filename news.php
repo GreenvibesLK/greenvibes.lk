@@ -36,7 +36,7 @@
     if ( $result_set ) {
       if ( mysqli_num_rows($result_set) > 0 ){
         while ( $result = mysqli_fetch_assoc($result_set)){
-          $blog_nav.= '<li><a href="index.php?blog_id='.$result['blog_id'].'"> ' . $result['blog_short_title'] . '</a></li>';
+          $blog_nav.= '<li><a href="news.php?blog_id='.$result['blog_id'].'"> ' . $result['blog_short_title'] . '</a></li>';
         }
       }
     }
@@ -48,6 +48,7 @@
 <html lang="en">
 <head>
   <link rel="icon" href="img/gv logo favicon green.svg">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/news.css">
   <link rel="stylesheet" href="fontawesome/css/all.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,7 +72,7 @@
     <div class="newsblog">
         <h1><?php echo $blog_title; ?></h1>
         <p class="newsdate">DATE POSTED :<?php echo $blog_date ?></p><br>
-        <?php echo '<img src="img/'.$blog_img.'" alt="">'?>;
+        <?php echo '<img src="img/'.$blog_img.'" alt="">'?>
         <?php echo ($blog_text); ?>
     </div>
 
