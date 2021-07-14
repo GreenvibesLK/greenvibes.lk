@@ -9,7 +9,8 @@
     width: 100%;
     background-position: center;
     background-size: cover;
-    position: relative;}
+    position: relative;
+}
  
 nav{
     display: flex;
@@ -147,8 +148,6 @@ nav .fa{
     }
 }
 
-
-
 .content{
     width: 80%;
     margin: auto;
@@ -207,4 +206,6 @@ footer ul li a i:hover{
     color: green;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}

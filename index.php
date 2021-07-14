@@ -7,12 +7,12 @@
   <div class="text-box">
         <h1>Make it simple. But significant</h1>
         <p>ShareTheMeal is a crowdfunding smartphone application to fight global hunger through the United Nations World Food Programme (WFP).</p>
-        <a href="news/index.php" class="visit-btn">Visit us</a>
+        <a href="#content" class="visit-btn">Visit us</a>
         </div>
     </section>
 <body>
-<section class="content">
-  
+<section class="content" id="content">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatum tempore, non, perferendis reiciendis ratione, ut tenetur exercitationem voluptatibus quisquam ex sint veritatis mollitia fugit laudantium. Accusantium, illo! Adipisci, aut!</p>
 
 
 </section>
