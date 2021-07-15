@@ -112,6 +112,12 @@ div.latest {
 	padding-bottom: 30px;
 }
 
+@media(max-width: 1600px){
+	div.latest {
+		padding-left: 8%;
+	}
+}
+
 #latest{
 	padding-top: 10px;
 	text-align: center;
