@@ -4,6 +4,7 @@
     $pass = "%,pxPI(}awU[";
     $dbname = "greenvi_blog";
     $connection = mysqli_connect($server, $user, $pass, $dbname);
+    $table = "blog";
  ?> -->
  <?php 
  	$server = "localhost";
@@ -11,4 +12,5 @@
     $pass = "";
     $dbname = "blog";
     $connection = mysqli_connect($server, $user, $pass, $dbname);
+    $table = "blog";
  ?>

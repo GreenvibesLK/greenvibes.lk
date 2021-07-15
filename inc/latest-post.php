@@ -13,7 +13,7 @@
 		}
 	}
 
-	$query = "SELECT * FROM blog ORDER BY blog_id DESC LIMIT 3";
+	$query = "SELECT * FROM {$table} ORDER BY blog_id DESC LIMIT 3";
 	$result_set = mysqli_query($connection,$query);
 	// checking if the query is successful
 	if ( $result_set ){

@@ -9,11 +9,11 @@
   if(isset($_GET['blog_id']))
   {
     $blog_id = mysqli_real_escape_string($connection, $_GET['blog_id']);
-    $query = "SELECT * FROM blog WHERE blog_id = {$blog_id} LIMIT 1";
+    $query = "SELECT * FROM {$table} WHERE blog_id = {$blog_id} LIMIT 1";
     
   } else {
     //getting the latest blog post
-    $query = "SELECT * FROM blog ORDER BY blog_id DESC LIMIT 1";
+    $query = "SELECT * FROM {$table} ORDER BY blog_id DESC LIMIT 1";
   }
   //executing the query
   $result_set = mysqli_query($connection, $query);
@@ -31,7 +31,7 @@
     }
 
     //preparing a list of previous posts
-    $query = "SELECT blog_id, blog_short_title FROM blog ORDER BY blog_id LIMIT 10";
+    $query = "SELECT blog_id, blog_short_title FROM {$table} ORDER BY blog_id LIMIT 10";
     $result_set = mysqli_query($connection, $query);
     $blog_nav = '<ul>';
     if ( $result_set ) {
