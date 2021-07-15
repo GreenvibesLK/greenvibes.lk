@@ -1,3 +1,4 @@
+<?php require_once('scroll-up.php'); ?>
 <footer>
 	<p>Copyright © 2021 Greenvibes Technologies</p>
   <ul>

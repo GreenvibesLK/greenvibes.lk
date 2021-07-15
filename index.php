@@ -17,6 +17,8 @@
 
 </section>
 
-<?php require_once('inc/latest-post.php'); ?>
 
+
+
+<?php require_once('inc/latest-post.php'); ?>
 <?php require_once('inc/footer.php'); ?>
