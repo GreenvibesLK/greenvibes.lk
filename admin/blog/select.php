@@ -17,13 +17,7 @@
  $rows = mysqli_num_rows($result);
  if($rows > 0)  
  {  
-	  if($rows > 10)
-	  {
-		  $delete_records = $rows - 10;
-		  $delete_sql = "DELETE FROM {$table} LIMIT $delete_records";
-		  mysqli_query($connect, $delete_sql);
-	  }
-      while($row = mysqli_fetch_array($result))  
+ while($row = mysqli_fetch_array($result))  
       {  
            $output .= '  
                 <tr>  
@@ -57,7 +51,7 @@
       $output .= '
 				<tr>  
 					<td></td>  
-                         
+
 					<td id="blog_date" contenteditable><input type="date"></td>
 
 					<td id="blog_title" contenteditable></td>

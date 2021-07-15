@@ -6,5 +6,3 @@
 		echo 'Data Deleted';  
 	}  
  ?>
-
- <input type="date">
