@@ -1,45 +1,48 @@
 <html>  
     <head>  
-        <title>Greenvibes - Admin</title>  
+        <title>Admin Area - Greenvibes</title>  
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
     </head>  
     <body>  
         <div class="container">  
-            <br />  
+            <br /> 
             <br />
 			<br />
-			<div class="table-responsive">  
-				<h3 align="center">GV network blogs</h3><br />
+			<div class="table-responsive">
+				<h3 align="center">GV Network blogs</h3><br />
 				<span id="result"></span>
 				<div id="live_data"></div>                 
 			</div>  
 		</div>
     </body>  
-</html>  
+</html> 
+
+
 <script>  
 $(document).ready(function(){  
     function fetch_data()  
-    {  
-        $.ajax({  
+    { 
+        $.ajax({ 
             url:"select.php",  
-            method:"POST",  
-            success:function(data){  
+            method:"POST", 
+            success:function(data){
 				$('#live_data').html(data);  
             }  
         });  
-    }  
+    }
+
     fetch_data();  
     $(document).on('click', '#btn_add', function(){  
-        var first_name = $('#first_name').text();  
-        var last_name = $('#last_name').text();  
-        if(first_name == '')  
+        var blog_date = $('#blog_date').text();  
+        var blog_title = $('#blog_title').text();  
+        if(blog_date == '')  
         {  
             alert("Enter First Name");  
             return false;  
         }  
-        if(last_name == '')  
+        if(blog_title == '')  
         {  
             alert("Enter Last Name");  
             return false;  
@@ -47,7 +50,7 @@ $(document).ready(function(){
         $.ajax({  
             url:"insert.php",  
             method:"POST",  
-            data:{first_name:first_name, last_name:last_name},  
+            data:{blog_date:blog_date, blog_title:blog_title},  
             dataType:"text",  
             success:function(data)  
             {  
@@ -70,15 +73,15 @@ $(document).ready(function(){
             }  
         });  
     }  
-    $(document).on('blur', '.first_name', function(){  
+    $(document).on('blur', '.blog_date', function(){  
         var id = $(this).data("id1");  
-        var first_name = $(this).text();  
-        edit_data(id, first_name, "first_name");  
+        var blog_date = $(this).text();  
+        edit_data(id, blog_date, "blog_date");  
     });  
-    $(document).on('blur', '.last_name', function(){  
+    $(document).on('blur', '.blog_title', function(){  
         var id = $(this).data("id2");  
-        var last_name = $(this).text();  
-        edit_data(id,last_name, "last_name");  
+        var blog_title = $(this).text();  
+        edit_data(id,blog_title, "blog_title");  
     });  
     $(document).on('click', '.btn_delete', function(){  
         var id=$(this).data("id3");  
