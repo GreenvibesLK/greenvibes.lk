@@ -1,17 +1,18 @@
 <html>  
     <head>  
-        <title>ADMIN - GREENVIBES</title>  
+        <title>ADMIN - GREENVIBES</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
-    </head>  
-    <body>  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    </head> 
+    <body> 
         <div class="container">  
             <br /> 
             <br />
 			<br />
 			<div class="table-responsive">
 				<h3 align="center">ADMIN AREA GREENVIBES TECHNOLOGIES</h3><br />
+                 <h3 align="center">POSTS LIST</h3>
 				<span id="result"></span>
 				<div id="live_data"></div>                 
 			</div>  
@@ -19,13 +20,12 @@
     </body>  
 </html> 
 
-
 <script>  
-$(document).ready(function(){  
+$(document).ready(function(){
     function fetch_data()  
     { 
-        $.ajax({ 
-            url:"select.php",  
+        $.ajax({
+            url:"select.php",
             method:"POST", 
             success:function(data){
 				$('#live_data').html(data);  
@@ -35,7 +35,7 @@ $(document).ready(function(){
 
     fetch_data();  
     $(document).on('click', '#btn_add', function(){  
-        var blog_date = $('#blog_date').text();  
+        var blog_date = $('#blog_date').date();  
         var blog_title = $('#blog_title').text(); 
         var blog_short_title = $('#blog_short_title').text(); 
         if(blog_date == '')  
@@ -77,7 +77,7 @@ $(document).ready(function(){
 
     $(document).on('blur', '.blog_date', function(){  
         var id = $(this).data("id1");  
-        var blog_date = $(this).text();  
+        var blog_date = $(this).date();  
         edit_data(id, blog_date, "blog_date");  
     });  
     $(document).on('blur', '.blog_title', function(){  

@@ -1,6 +1,6 @@
-<?php  
+<?php
  require_once('inc/connection.php');
- $output = '';  
+ $output = ''; 
  $sql = "SELECT * FROM {$table} ORDER BY blog_id DESC";
  $result = mysqli_query($connect, $sql);  
  $output .= '  
