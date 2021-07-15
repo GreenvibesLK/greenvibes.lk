@@ -22,7 +22,7 @@
                     <li><a href="our-group.php">OUR GROUP</a></li>
                     <li><a href="services.php">SERVICES</a></li>
                     <li><a href="projects.php">PROJECTS</a></li>
-                    <li><a href="client.php">CLIENTS</a></li>
+                    <li><a href="clients.php">CLIENTS</a></li>
                     <li><a href="resources.php">RESOURCES</a></li>
                     <li><a href="news.php">NEWS</a></li>
                     <li><a href="contact.php">CONTACT</a></li>
