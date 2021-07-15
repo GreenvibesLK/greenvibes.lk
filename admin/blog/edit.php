@@ -1,9 +1,9 @@
 <?php  
-	$connect = mysqli_connect("localhost", "root", "", "testing");
+	require_once('inc/connection.php');
 	$id = $_POST["id"];  
 	$text = $_POST["text"];  
 	$column_name = $_POST["column_name"];  
-	$sql = "UPDATE tbl_sample SET ".$column_name."='".$text."' WHERE id='".$id."'";  
+	$sql = "UPDATE {$table} SET ".$column_name."='".$text."' WHERE blog_id='".$id."'";  
 	if(mysqli_query($connect, $sql))  
 	{  
 		echo 'Data Updated';  
