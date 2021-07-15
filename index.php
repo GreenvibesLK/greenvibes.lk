@@ -1,12 +1,12 @@
 <style type=text/css> .header {
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/home.jpg);}
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/featured.jpg);}
 </style>
 
 <?php $title = 'Home - '; ?>
 <?php require_once('inc/header.php'); ?>
   <div class="text-box">
         <h1>Make it simple. But significant</h1>
-        <p>ShareTheMeal is a crowdfunding smartphone application to fight global hunger through the United Nations World Food Programme (WFP).</p>
+        <p>We are Greenvibes Technologies</p>
         <a href="#content" class="visit-btn">Visit us</a>
         </div>
     </section>
