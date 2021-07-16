@@ -27,7 +27,7 @@
 			// prepare database query
 			$query = "SELECT * FROM user 
 						WHERE email = '{$email}' 
-						AND password = '{$password}' 
+						AND password = '{$hashed_password}' 
 						LIMIT 1";
 
 			$result_set = mysqli_query($connection, $query);

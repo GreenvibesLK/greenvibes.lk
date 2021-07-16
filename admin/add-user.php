@@ -4,19 +4,7 @@
 <?php 	if (!isset($_SESSION['user_id'])) {
 		header('Location: index.php');
 	} ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Add New User</title>
-	<link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-	<header>
-		<div class="appname">User Management System</div>
-		<div class="loggedin">Welcome <?php echo $_SESSION['first_name']; ?>! <a href="logout.php">Log Out</a></div>
-	</header>
-
+<?php require_once('inc/header.php') ?>
 	<main>
 		<h1>Add New User<span><a href="users.php"> < Back to User List</a></span></h1>
 

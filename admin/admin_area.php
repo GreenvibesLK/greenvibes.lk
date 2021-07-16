@@ -8,13 +8,10 @@
 	}
  ?>
  <?php require_once('inc/header.php'); ?>
-	<header>
-		<div class="navigation">
-			<div class="appname">Admin Area</div>
-				<div class="loggedin">Welcome <?php echo $_SESSION['first_name']; ?> !<br> <a href="logout.php">Log Out</a>
-				</div>
-			</div>
-	</header>
+ <?php require_once('inc/navi.php'); ?>
 <div class="container">
+
+
+
 </div>
  <?php require_once('inc/footer.php'); ?>

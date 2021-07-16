@@ -12,25 +12,20 @@ h3 {
 	color: white;
 }
 
-
 header {
 	position: fixed;
 	width: 100%;
-	height: 80px;
+	height: 60px;
 	background-color: lightgreen;
 	display: flex;
 }
 
 .navigation {
-	padding: 20px 30px;
+	padding: 10px 30px;
 }
 .appname {
 	float: left;
 }
 .loggedin{
-	float: right;
-}
-
-.loggedin a{
 	float: right;
 }
