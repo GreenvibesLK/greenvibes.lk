@@ -60,48 +60,46 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Log In - User Management System</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-	<div class="login">
+	<div class="container">
+        <div class="row justify-content-center align-items-center" style="height:100vh">
+            <div class="col-4">
+              <h3 align="center">Admin Login</h3>
+                <div class="card">
+                    <div class="card-body">
+                        <form action="index.php" method="post" autocomplete="off">
+                            <div class="form-group">
+                            	<?php 
+								if (isset($errors) && !empty($errors)) {
+									echo '<p class="error">Invalid Username / Password</p>';
+								}
+								?>
 
-		<form action="index.php" method="post">
-			
-			<fieldset>
-				<legend><h1>Log In</h1></legend>
+								<?php 
+									if (isset($_GET['logout'])) {
+										echo '<p class="info">You have successfully logged out from the system</p>';
+									}
+								?>
 
-				<?php 
-					if (isset($errors) && !empty($errors)) {
-						echo '<p class="error">Invalid Username / Password</p>';
-					}
-				?>
-
-				<?php 
-					if (isset($_GET['logout'])) {
-						echo '<p class="info">You have successfully logged out from the system</p>';
-					}
-				?>
-
-				<p>
-					<label for="">Username:</label>
-					<input type="text" name="email" id="" placeholder="Email Address">
-				</p>
-
-				<p>
-					<label for="">Password:</label>
-					<input type="password" name="password" id="" placeholder="Password">
-				</p>
-
-				<p>
-					<button type="submit" name="submit">Log In</button>
-				</p>
-
-			</fieldset>
-
-		</form>		
-
-	</div> <!-- .login -->
+                                <input type="text" class="form-control" name="email" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password" placeholder="Enter password">
+                            </div>
+                            <input type="submit" class="fadeIn fourth" value="Log In">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 <?php mysqli_close($connection); ?>

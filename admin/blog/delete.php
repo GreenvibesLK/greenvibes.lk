@@ -6,3 +6,4 @@
 		echo 'Data Deleted';  
 	}  
  ?>
+
