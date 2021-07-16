@@ -29,3 +29,7 @@ header {
 .loggedin{
 	float: right;
 }
+
+.admin-btn button{
+	width: 200px;
+}

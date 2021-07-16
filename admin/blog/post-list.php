@@ -30,7 +30,7 @@
                      <td class="blog_short_title" data-id3="'.$row["blog_id"].'" contenteditable>'.$row["blog_short_title"].'</td>
 
                      <td><button type="button" name="delete_btn" data-id4="'.$row["blog_id"].'" class="btn btn-xs btn-danger btn_delete">x</button></td>  
-                </tr>  
+                </tr> 
            ';  
       }  
       $output .= '  

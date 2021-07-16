@@ -26,7 +26,7 @@ $(document).ready(function(){
     { 
         $.ajax({
             url:"select.php",
-            method:"POST", 
+            method:"POST",
             success:function(data){
 				$('#live_data').html(data);  
             }  
