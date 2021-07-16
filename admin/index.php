@@ -48,7 +48,7 @@
 				verify_query($result_set);
 
 				// redirect to users.php
-				header('Location: users.php');
+				header('Location: admin_area.php');
 			} else {
 				// user name and password invalid
 				$errors[] = 'Invalid Username / Password';
