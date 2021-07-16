@@ -8,7 +8,7 @@
            <table class="table table-bordered">
             <tr>  
                      <th width="5%">Id</th>  
-                     <th width="20%">Blog Date</th>  
+                     <th width="8%">Blog Date</th>  
                      <th width="20%">Blog Title</th>
                      <th width="20%">Blog S-title</th>
                      <th width="5%">Delete</th>
@@ -52,7 +52,7 @@
 				<tr>  
 					<td></td>  
 
-					<td id="blog_date" contenteditable><input type="date"></td>
+					<td id="blog_date" contenteditable></td>
 
 					<td id="blog_title" contenteditable></td>
 
