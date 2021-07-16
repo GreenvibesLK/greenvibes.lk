@@ -57,6 +57,7 @@
 	}
 ?>
 <?php require_once('inc/header.php'); ?>
+
 <div class="container">
         <div class="row justify-content-center align-items-center" style="height:100vh">
             <div class="col-4">
@@ -90,6 +91,4 @@
             </div>
         </div>
     </div>
-</body>
-</html>
-<?php mysqli_close($connection); ?>
+<?php require_once('inc/footer.php') ?>
