@@ -57,10 +57,8 @@
 	}
 ?>
 <?php require_once('inc/header.php'); ?>
-
-<div class="container">
         <div class="row justify-content-center align-items-center" style="height:100vh">
-            <div class="col-4">
+            <div>
               <h3 align="center">Admin Login</h3>
                 <div class="card">
                     <div class="card-body">

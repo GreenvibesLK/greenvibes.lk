@@ -11,7 +11,7 @@
 	<header>
 		<div class="navigation">
 			<div class="appname">Admin Area</div>
-				<div class="loggedin">Welcome <?php echo $_SESSION['first_name']; ?>! <a href="logout.php">Log Out</a>
+				<div class="loggedin">Welcome <?php echo $_SESSION['first_name']; ?> !<br> <a href="logout.php">Log Out</a>
 				</div>
 			</div>
 	</header>
