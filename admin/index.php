@@ -27,7 +27,7 @@
 			// prepare database query
 			$query = "SELECT * FROM user 
 						WHERE email = '{$email}' 
-						AND password = '{$hashed_password}' 
+						AND password = '{$password}' 
 						LIMIT 1";
 
 			$result_set = mysqli_query($connection, $query);
@@ -67,7 +67,7 @@
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-<body>
+<body class="content">
 	<div class="container">
         <div class="row justify-content-center align-items-center" style="height:100vh">
             <div class="col-4">
@@ -87,13 +87,14 @@
 										echo '<p class="info">You have successfully logged out from the system</p>';
 									}
 								?>
-
                                 <input type="text" class="form-control" name="email" placeholder="Enter email">
                             </div>
                             <div class="form-group">
                                 <input type="password" class="form-control" name="password" placeholder="Enter password">
                             </div>
-                            <input type="submit" class="fadeIn fourth" value="Log In">
+                            <!-- <input type="submit" name="" class="fadeIn fourth"> -->
+                            <button type="submit" name="submit" class="fadeIn fourth">Log In</button>
+
                         </form>
                     </div>
                 </div>
