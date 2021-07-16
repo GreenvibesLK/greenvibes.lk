@@ -21,7 +21,7 @@
       {  
            $output .= '  
                 <tr>
-                     <td>'.$row["blog_id"].'</td>  
+                     <td><a href="edit-post.php?blog_id='.$row["blog_id"].'">'.$row["blog_id"].'</td>  
 
                      <td class="blog_date" data-id1="'.$row["blog_id"].'" contenteditable>'.$row["blog_date"].'</td>  
 

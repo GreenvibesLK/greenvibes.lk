@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     fetch_data();  
     $(document).on('click', '#btn_add', function(){  
-        var blog_date = $('#blog_date').date();  
+        var blog_date = $('#blog_date').text();  
         var blog_title = $('#blog_title').text(); 
         var blog_short_title = $('#blog_short_title').text(); 
-        if(blog_date == '')  
-        {  
-            alert("Enter Blog Date");  
-            return false;  
-        }  
+        // if(blog_date == '')  
+        // {  
+        //     alert("Enter Blog Date");  
+        //     return false;  
+        // }  
         if(blog_title == '')  
         {  
             alert("Enter Blog Title");  
@@ -77,7 +77,7 @@ $(document).ready(function(){
 
     $(document).on('blur', '.blog_date', function(){  
         var id = $(this).data("id1");  
-        var blog_date = $(this).date();  
+        var blog_date = $(this).text();  
         edit_data(id, blog_date, "blog_date");  
     });  
     $(document).on('blur', '.blog_title', function(){  
