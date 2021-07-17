@@ -1,7 +1,7 @@
 !
 <?php 
   //connecting to the database
-  require_once('inc/connection.php');
+  require_once('inc/connect.php');
   //checking the connect
   if (!$connect) {
     die("Error - Database connect failed");
