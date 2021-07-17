@@ -80,9 +80,7 @@
                             <div class="form-group">
                                 <input type="password" class="form-control" name="password" placeholder="Enter password">
                             </div>
-                            <!-- <input type="submit" name="" class="fadeIn fourth"> -->
                             <button type="submit" name="submit" class="btn btn-outline-success">Log In</button>
-
                         </form>
                     </div>
                 </div>
