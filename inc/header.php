@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;800&display=swap" rel="stylesheet">
     </head>
-<body> 
+<body>
+    
     <section class="header")>
         <nav>
             <a href="index.php"><img src="img/GreenvibesLK white.png">  </a>

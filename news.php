@@ -61,12 +61,18 @@
   $(document).ready(function(){
     $('.navigation').sticky();
   });
+      window.addEventListener("load",function(){
+    document.querySelector(".loader").classList.add("hidden")
+})
 </script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>News - <?php echo $blog_title ?></title>
 </head>
 <body>
+  <div class="loader">
+         <img src="img/preloader.gif" alt="">
+    </div>
 <div class="navigation">
   <nav>
       <a href="index.php"><img src="img/GreenvibesLK.png">  </a>
