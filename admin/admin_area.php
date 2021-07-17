@@ -4,7 +4,7 @@
 <?php require_once('inc/session.php'); ?>
 
 <div class="container">
-	<form action="blog/index.php" method="post"><div class="admin-btn" align="center">
+	<form action="content.php" method="post"><div class="admin-btn" align="center">
 				<button type="submit" name="table" class="btn btn-success btn-lg" value="blog">GREENVIBES</button><br><br>
 
 				<button type="submit" name="tabel" class="btn btn-success btn-lg" value="pblog">PLANTING</button> <br><br>
