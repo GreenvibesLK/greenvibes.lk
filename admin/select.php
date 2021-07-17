@@ -1,4 +1,5 @@
-<?php  
+<?php 
+ $table = $_GET['table'];
  require_once('inc/connect.php');
  $output = '';  
  $sql = "SELECT * FROM {$table} ORDER BY blog_id DESC";

@@ -1,4 +1,8 @@
-<head>  
+<?php if(isset($_POST['table'])){
+       $table = $_POST['table'];} 
+
+       ?>
+<head> 
         <title>Contents</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
         <link rel="stylesheet" href="../">
@@ -9,7 +13,26 @@
         <div class="container">  
             <br /> 
             <br />
-			<br />
+			<br /> <?php 
+                    $heading = $table;
+
+        switch ($heading) {
+          case "blog":
+            echo "Greenvibes News Panel";
+            break;
+          case "pblog":
+            echo "Greenvibes Planting News Panel";
+            break;
+          case "eblog":
+            echo "Greenvibes Edu News Panel";
+            break;
+          case "iblog":
+            echo "Greenvibes Innovation News Panel";
+            break;
+          default:
+            echo "null!";
+        }
+             ?>
 			<div class="table-responsive">
 <!-- 				<h3 align="center">ADMIN AREA GREENVIBES TECHNOLOGIES</h3><br />
                  <h3 align="center">POSTS LIST</h3> -->
@@ -25,7 +48,7 @@ $(document).ready(function(){
     function fetch_data()  
     { 
         $.ajax({
-            url:"select.php",
+            url:"select.php?table=<?php echo $table ?>",
             method:"POST",
             success:function(data){
 				$('#live_data').html(data);  
@@ -49,7 +72,7 @@ $(document).ready(function(){
             return false;  
         }  
         $.ajax({  
-            url:"insert.php",  
+            url:"insert.php?table=<?php echo $table ?>",  
             method:"POST",  
             data:{blog_date:blog_date, blog_title:blog_title, blog_short_title:blog_short_title},  
             dataType:"text",  
@@ -64,7 +87,7 @@ $(document).ready(function(){
 	function edit_data(id, text, column_name)  
     {  
         $.ajax({  
-            url:"edit.php",  
+            url:"edit.php?table=<?php echo $table ?>",  
             method:"POST",  
             data:{id:id, text:text, column_name:column_name},  
             dataType:"text",  
@@ -95,7 +118,7 @@ $(document).ready(function(){
         if(confirm("Are you sure you want to delete this?"))  
         {  
             $.ajax({  
-                url:"delete.php",  
+                url:"delete.php?table=<?php echo $table ?>",  
                 method:"POST",  
                 data:{id:id},  
                 dataType:"text",  

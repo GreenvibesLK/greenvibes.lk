@@ -1,7 +1,4 @@
 <?php
-	if(isset($_POST['table'])){
-       $table = $_POST['table'];
-        } 
-    $table = 'pblog';  
+    $table = $_GET['table'];
 	$connect = mysqli_connect("localhost", "root", "", "blog");
  ?>
