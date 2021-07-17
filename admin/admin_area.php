@@ -21,7 +21,8 @@
 
 				<button type="submit" name="table" class="btn btn-success btn-lg">AYOGO</button> <br><br>
 
-				<button type="submit" name="table" class="btn btn-success btn-lg" value="eblog">EDU</button> <br><br></div>
+				<button type="submit" name="table" class="btn btn-success btn-lg" value="eblog">EDU</button> <br><br>
+				<button type="submit" name="table" class="btn btn-success btn-lg" value="eblog">ENDLESS</button> <br><br></div>
 			</div></form>
 
 
