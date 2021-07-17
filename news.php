@@ -47,18 +47,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
   <link rel="icon" href="img/gv logo favicon green.svg">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/news.css">
   <link rel="stylesheet" href="fontawesome/css/all.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,800;1,900&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  $(document).ready(function(){
+    $('.navigation').sticky();
+  });
+</script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>News - <?php echo $blog_title ?></title>
 </head>
 <body>
-<section class="navigation">
+<div class="navigation">
   <nav>
       <a href="index.php"><img src="img/GreenvibesLK.png">  </a>
             <div class="nav-links" id="navLinks">
@@ -74,9 +83,9 @@
                     <li><a href="contact.php">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
-</section>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+</div>
 
 <div class="add">
   <p>Advertising area</p>

@@ -16,5 +16,6 @@
 		$('.navigation').sticky();
 		});
 	</script>
+
 </head>
 <body class="content">
