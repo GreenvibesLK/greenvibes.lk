@@ -12,10 +12,7 @@
     $blog_id = mysqli_real_escape_string($connect, $_GET['blog_id']);
     $query = "SELECT * FROM {$table} WHERE blog_id = {$blog_id} LIMIT 1";
     
-  } else {
-    //getting the latest blog post
-    $query = "SELECT * FROM {$table} ORDER BY blog_id DESC LIMIT 1";
-  }
+  } 
   //executing the query
   $result_set = mysqli_query($connect, $query);
     //checking id the query is successful
