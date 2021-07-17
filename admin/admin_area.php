@@ -23,4 +23,8 @@
 
 				<button type="submit" name="table" class="btn btn-success btn-lg" value="eblog">EDU</button> <br><br></div>
 			</div></form>
+
+
+
+			
  <?php require_once('inc/footer.php'); ?>

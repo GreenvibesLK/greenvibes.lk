@@ -5,4 +5,4 @@
 			</div>
 		</div>
 </header>
-<p style="padding-top:80px; padding-left:20px; ">Welcome <?php echo $_SESSION['first_name']; ?>...!<br> </p>
+<p style="padding-top:5px; padding-left:20px; ">Welcome <?php echo $_SESSION['first_name']; ?>...!<br> </p>
