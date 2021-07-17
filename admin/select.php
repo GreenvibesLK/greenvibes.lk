@@ -1,4 +1,5 @@
 <?php 
+ $table = $_GET['table'];
  require_once('inc/connect.php');
  $output = '';  
  $sql = "SELECT * FROM {$table} ORDER BY blog_id DESC";
@@ -21,7 +22,7 @@
       {  
            $output .= '  
                 <tr>
-                     <td><a href="edit-post.php?blog_id='.$row["blog_id"].'">'.$row["blog_id"].'</td>  
+                     <td><a href="edit-post.php?blog_id='.$row["blog_id"].'&table='.$table.'">'.$row["blog_id"].'</td>  
 
                      <td class="blog_date" data-id1="'.$row["blog_id"].'" contenteditable>'.$row["blog_date"].'</td>  
 
