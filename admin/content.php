@@ -1,5 +1,5 @@
 <head>  
-        <title>ADMIN - GREENVIBES</title>
+        <title>Contents</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
         <link rel="stylesheet" href="../">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
@@ -11,8 +11,8 @@
             <br />
 			<br />
 			<div class="table-responsive">
-				<h3 align="center">ADMIN AREA GREENVIBES TECHNOLOGIES</h3><br />
-                 <h3 align="center">POSTS LIST</h3>
+<!-- 				<h3 align="center">ADMIN AREA GREENVIBES TECHNOLOGIES</h3><br />
+                 <h3 align="center">POSTS LIST</h3> -->
 				<span id="result"></span>
 				<div id="live_data"></div>                 
 			</div>  
