@@ -1,5 +1,5 @@
 <?php  
-	require_once('inc/connection.php');
+	require_once('inc/connect.php');
 	$id = $_POST["id"];  
 	$text = $_POST["text"];  
 	$column_name = $_POST["column_name"];  
