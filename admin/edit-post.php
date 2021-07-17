@@ -46,13 +46,24 @@
 </head>
 <body>
   <div class="container" class="btn btn-secondary">
-     <a href="index.php">Back TO LIST</a>
+     <a href="content.php">Back TO LIST</a>
     <div class="newsblog">
         <h1 class="blog_title" id="blog_date" data-id2=<?php echo $blog_id?> contenteditable><?php echo $blog_title; ?></h1>
-        <p class="newsdate">DATE POSTED :<?php echo $blog_date ?></p><br>
+
+        <p class="newsdate" id="blog_date" contenteditable>DATE POSTED :<?php echo $blog_date ?></p><br>
+
         <?php echo '<img src="img/'.$blog_img.'" alt="">'?>
+
         <?php echo $blog_text; ?> <br>
+
         <h5>Published by :  <?php echo $created_by; ?></h5>
+
+
+        <style>
+            h1 {
+                width: 100%;
+            }
+        </style>
     </div>
 </div>
 
@@ -65,10 +76,10 @@ $(document).ready(function(){
     function fetch_data()  
     { 
         $.ajax({
-            url:"edit-post.php",
-            method:"POST", 
+            url:"select.php?table=<?php echo $table ?>",
+            method:"POST",
             success:function(data){
-                    $('#live_data').html(data);  
+                $('#live_data').html(data);  
             }  
         });  
     }
@@ -78,18 +89,18 @@ $(document).ready(function(){
         var blog_date = $('#blog_date').text();  
         var blog_title = $('#blog_title').text(); 
         var blog_short_title = $('#blog_short_title').text(); 
-        if(blog_date == '')  
-        {  
-            alert("Enter Blog Date");  
-            return false;  
-        }  
+        // if(blog_date == '')  
+        // {  
+        //     alert("Enter Blog Date");  
+        //     return false;  
+        // }  
         if(blog_title == '')  
         {  
             alert("Enter Blog Title");  
             return false;  
         }  
         $.ajax({  
-            url:"insert.php",  
+            url:"insert.php?table=<?php echo $table ?>",  
             method:"POST",  
             data:{blog_date:blog_date, blog_title:blog_title, blog_short_title:blog_short_title},  
             dataType:"text",  
@@ -101,16 +112,16 @@ $(document).ready(function(){
         })  
     });  
     
-     function edit_data(id, text, column_name)  
+    function edit_data(id, text, column_name)  
     {  
         $.ajax({  
-            url:"edit.php",  
+            url:"edit.php?table=<?php echo $table ?>",
             method:"POST",  
             data:{id:id, text:text, column_name:column_name},  
             dataType:"text",  
             success:function(data){  
                 //alert(data);
-                    $('#result').html("<div class='alert alert-success'>"+data+"</div>");
+                $('#result').html("<div class='alert alert-success'>"+data+"</div>");
             }  
         });  
     }
@@ -135,7 +146,7 @@ $(document).ready(function(){
         if(confirm("Are you sure you want to delete this?"))  
         {  
             $.ajax({  
-                url:"delete.php",  
+                url:"delete.php?table=<?php echo $table ?>",  
                 method:"POST",  
                 data:{id:id},  
                 dataType:"text",  
@@ -148,28 +159,3 @@ $(document).ready(function(){
     });  
 });  
 </script>
-
-
-<style>
-     *{
-          font-family: 'Poppins', sans-serif;
-     }
-
-     div.newsblog h1 {
-     font-size: 48px;
-     letter-spacing: -2px;
-}
-
-/*div.newsblog img {
- width: 100%;
-}*/
-
-div.newsblog h5{
-     float: right;
-}
-
-p.newsdate {
-     font-size:  14px;
-}
-</style>
-

@@ -8,7 +8,7 @@
       <div class="table-responsive borderless">
            <table class="table table-bordered">
             <tr>  
-                     <th width="5%">Id</th>  
+                     <th width="2%" >Id</th>  
                      <th width="8%">Blog Date</th>  
                      <th width="20%">Blog Title</th>
                      <th width="20%">Blog S-title</th>
@@ -22,7 +22,7 @@
       {  
            $output .= '  
                 <tr>
-                     <td><a href="edit-post.php?blog_id='.$row["blog_id"].'&table='.$table.'">'.$row["blog_id"].'</td>  
+                     <td align="center"><a href="edit-post.php?blog_id='.$row["blog_id"].'&table='.$table.'">'.$row["blog_id"].'</td>  
 
                      <td class="blog_date" data-id1="'.$row["blog_id"].'" contenteditable>'.$row["blog_date"].'</td>  
 
