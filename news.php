@@ -62,7 +62,7 @@
     $('.navigation').sticky();
   });
       window.addEventListener("load",function(){
-    document.querySelector(".loader").classList.add("hidden")
+    // document.querySelector(".loader").classList.add("hidden")
 })
 </script>
 
