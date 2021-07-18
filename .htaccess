@@ -1,5 +1,6 @@
 RewriteEngine On
 
+RewriteRule ^home$ index.php [NC,L]
 RewriteRule ^about$ about-us.php [NC,L]
 RewriteRule ^our-group$ our-group.php [NC,L]
 RewriteRule ^services$ services.php [NC,L]

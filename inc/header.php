@@ -15,7 +15,7 @@
     
     <section class="header")>
         <nav>
-            <a href="index.php"><img src="img/GreenvibesLK white.png">  </a>
+            <a href="home"><img src="img/GreenvibesLK white.png">  </a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
