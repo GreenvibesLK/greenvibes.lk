@@ -15,18 +15,18 @@
     
     <section class="header")>
         <nav>
-            <a href="home"><img src="img/GreenvibesLK white.png">  </a>
+            <a href="index.php"><img src="img/GreenvibesLK white.png">  </a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="about">ABOUT US</a></li>
-                    <li><a href="our-group">OUR GROUP</a></li>
-                    <li><a href="services">SERVICES</a></li>
-                    <li><a href="projects">PROJECTS</a></li>
-                    <li><a href="clients">CLIENTS</a></li>
-                    <li><a href="resources">RESOURCES</a></li>
-                    <li><a href="news">NEWS</a></li>
-                    <li><a href="contact">CONTACT</a></li>
+                    <li><a href="about.php">ABOUT US</a></li>
+                    <li><a href="our-group.php">OUR GROUP</a></li>
+                    <li><a href="services.php">SERVICES</a></li>
+                    <li><a href="projects.php">PROJECTS</a></li>
+                    <li><a href="clients.php">CLIENTS</a></li>
+                    <li><a href="resources.php">RESOURCES</a></li>
+                    <li><a href="news.php">NEWS</a></li>
+                    <li><a href="contact.php">CONTACT</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
