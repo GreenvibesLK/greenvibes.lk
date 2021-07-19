@@ -1,7 +1,12 @@
-<?php if(isset($_POST['table'])){
-       $table = $_POST['table'];} 
+<?php 
+    session_start();
 
-       ?>
+    if(isset($_POST['table'])){
+       $table = $_POST['table']; 
+       $_SESSION['table'] = $table;
+   }
+
+?>
 <head> 
         <title>Contents</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
@@ -48,7 +53,7 @@ $(document).ready(function(){
     function fetch_data()  
     { 
         $.ajax({
-            url:"select.php?table=<?php echo $table ?>",
+            url:"select.php",
             method:"POST",
             success:function(data){
 				$('#live_data').html(data);  
@@ -72,7 +77,7 @@ $(document).ready(function(){
             return false;  
         }  
         $.ajax({  
-            url:"insert.php?table=<?php echo $table ?>",  
+            url:"insert.php",  
             method:"POST",  
             data:{blog_date:blog_date, blog_title:blog_title, blog_short_title:blog_short_title},  
             dataType:"text",  
@@ -87,7 +92,7 @@ $(document).ready(function(){
 	function edit_data(id, text, column_name)  
     {  
         $.ajax({  
-            url:"edit.php?table=<?php echo $table ?>",
+            url:"edit.php",
             method:"POST",  
             data:{id:id, text:text, column_name:column_name},  
             dataType:"text",  
@@ -118,12 +123,12 @@ $(document).ready(function(){
         if(confirm("Are you sure you want to delete this?"))  
         {  
             $.ajax({  
-                url:"delete.php?table=<?php echo $table ?>",  
+                url:"delete.php",  
                 method:"POST",  
                 data:{id:id},  
                 dataType:"text",  
                 success:function(data){  
-                    alert(data);  
+                    alert(data);
                     fetch_data();
                 }  
             });  
@@ -131,3 +136,7 @@ $(document).ready(function(){
     });  
 });  
 </script>
+
+<?php 
+  
+ ?>

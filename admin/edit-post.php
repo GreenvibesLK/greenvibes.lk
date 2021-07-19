@@ -10,8 +10,7 @@
   if(isset($_GET['blog_id']))
   {
     $blog_id = mysqli_real_escape_string($connect, $_GET['blog_id']);
-    $query = "SELECT * FROM {$table} WHERE blog_id = {$blog_id} LIMIT 1";
-    
+    $query = "SELECT * FROM {$table} WHERE blog_id = {$blog_id} LIMIT 1"; 
   } 
   //executing the query
   $result_set = mysqli_query($connect, $query);
@@ -46,7 +45,7 @@
 </head>
 <body>
   <div class="container" class="btn btn-secondary">
-     <a href="content.php">Back TO LIST</a>
+     <a href="content.php" align="right">Back TO LIST</a>
     <div class="newsblog">
         <h1 class="blog_title" id="blog_date" data-id2=<?php echo $blog_id?> contenteditable><?php echo $blog_title; ?></h1>
 
