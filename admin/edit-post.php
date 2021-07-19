@@ -44,8 +44,8 @@
   <title>News - <?php echo $blog_title ?></title>
 </head>
 <body>
-  <div class="container" class="btn btn-secondary">
-     <a href="content.php" align="right">Back TO LIST</a>
+  <div class="container">
+     <a href="content.php" type="button" class="btn btn-primary" style="float:right;">Back TO LIST</a>
     <div class="newsblog">
         <h1 class="blog_title" id="blog_date" data-id2=<?php echo $blog_id?> contenteditable><?php echo $blog_title; ?></h1>
 

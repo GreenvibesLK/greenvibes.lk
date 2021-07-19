@@ -4,7 +4,8 @@
     if(isset($_POST['table'])){
        $table = $_POST['table']; 
        $_SESSION['table'] = $table;
-   }
+   }   
+       $table = $_SESSION['table'];
 
 ?>
 <head> 
