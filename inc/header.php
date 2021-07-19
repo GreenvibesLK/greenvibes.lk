@@ -13,7 +13,7 @@
     </head>
 <body>
     
-    <section class="header")>
+    <section class="header">
         <nav>
             <a href="index.php"><img src="img/GreenvibesLK white.png">  </a>
             <div class="nav-links" id="navLinks">
