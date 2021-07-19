@@ -1,4 +1,3 @@
-!
 <?php 
   //connecting to the database
   require_once('inc/connect.php');

@@ -10,15 +10,16 @@
 ?>
 <head> 
         <title>Contents</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
         <link rel="stylesheet" href="../">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     </head> 
     <body> 
-        <div class="container">  
+        <div class="container">
             <br /> 
             <br />
+             <a href="content.php" type="button" class="btn btn-primary" style="float:right;">BACK TO LIST</a>
 			<br /> <?php 
                     $heading = $table;
 
