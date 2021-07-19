@@ -43,7 +43,7 @@
   <title>News - <?php echo $blog_title ?></title>
 </head>
 <body>
-  <div class="container">
+  <div class="container"><br><br>
      <a href="content-list.php" type="button" class="btn btn-primary" style="float:right;">BACK TO LIST</a>
     <div class="newsblog">
         <h1 class="blog_title" id="blog_date" data-id2=<?php echo $blog_id?> contenteditable><?php echo $blog_title; ?></h1>
