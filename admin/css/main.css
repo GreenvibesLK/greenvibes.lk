@@ -19,6 +19,8 @@ header {
 }
 
 .navigation {
+	width: 100%;
+	position: fixed;
 	background-color: #50C878;
 	padding: 10px 30px;
 	overflow: auto;

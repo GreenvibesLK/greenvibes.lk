@@ -57,11 +57,11 @@
 	}
 ?>
 <?php require_once('inc/header.php'); ?>
-        <div class="row justify-content-center align-items-center" style="height:100vh">
+        <div class="row justify-content-center align-items-center" style="height:100vh;">
             <div>
               <h3 align="center">Admin Login</h3>
-                <div class="card">
-                    <div class="card-body">
+                <div class="card" >
+                    <div class="card-body" style="width: 400px;">
                         <form action="index.php" method="post" autocomplete="off">
                             <div class="form-group">
                             	<?php 
@@ -86,4 +86,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>	
+</body>	
+</html>
