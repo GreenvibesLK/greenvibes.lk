@@ -1,4 +1,4 @@
-<div align="center" style="bottom:10px"><p>Copyright © 2021 Greenvibes Technologies</p></div>
+<footer align="center">Copyright © 2021 Greenvibes Technologies</footer>
+<?php mysqli_close($connection); ?>
 </body>
 </html>
-<?php mysqli_close($connection); ?>

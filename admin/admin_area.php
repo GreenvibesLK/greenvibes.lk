@@ -12,6 +12,7 @@
 				<button type="submit" name="table"class="btn btn-success btn-lg">MYMEAL</button> <br><br>
 				<button type="submit" name="table" class="btn btn-success btn-lg">AYOGO</button> <br><br>
 				<button type="submit" name="table" class="btn btn-success btn-lg" value="">ENDLESS</button> <br><br></div>
-			</div></form>
+	</form>
+</div>
 			
  <?php require_once('inc/footer.php'); ?>

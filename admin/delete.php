@@ -4,6 +4,6 @@
 	if(mysqli_query($connect, $sql))  
 	{  
 		echo 'Data Deleted';  
-	}  
+	}
  ?>
 

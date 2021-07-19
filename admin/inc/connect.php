@@ -3,5 +3,3 @@
     $table = $_SESSION['table'];
 	$connect = mysqli_connect("localhost", "root", "", "blog");
  ?>
-
- <form action=""></form>

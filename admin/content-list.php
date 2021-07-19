@@ -1,6 +1,8 @@
+<?php session_start(); ?>
+<?php require_once('inc/header.php'); ?>
+<?php require_once('inc/navi.php'); ?>
+<?php require_once('inc/session.php'); ?>
 <?php 
-    session_start();
-
     if(isset($_POST['table'])){
        $table = $_POST['table']; 
        $_SESSION['table'] = $table;
@@ -25,24 +27,22 @@
 
         switch ($heading) {
           case "blog":
-            echo "Greenvibes News Panel";
+            echo "<h4>Greenvibes News Panel</h4>";
             break;
           case "pblog":
-            echo "Greenvibes Planting News Panel";
+            echo "<h4>Greenvibes Planting News Panel</h4>";
             break;
           case "eblog":
-            echo "Greenvibes Edu News Panel";
+            echo "<h4>Greenvibes Edu News Panel</h4>";
             break;
           case "iblog":
-            echo "Greenvibes Innovation News Panel";
+            echo "<h4>Greenvibes Innovation News Panel</h4>";
             break;
           default:
             echo "null!";
         }
              ?>
 			<div class="table-responsive">
-<!-- 				<h3 align="center">ADMIN AREA GREENVIBES TECHNOLOGIES</h3><br />
-                 <h3 align="center">POSTS LIST</h3> -->
 				<span id="result"></span>
 				<div id="live_data"></div>                 
 			</div>  
