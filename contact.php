@@ -17,7 +17,7 @@
         <img src="img/mailcon.png" alt="IMG">
       </div>
 
-      <form class="contact1-form validate-form">
+      <form class="contact1-form validate-form" action="contact.php" method="post"> 
         <h5 class="contact1-form-title">
           Get in touch
         </h5>
@@ -43,7 +43,7 @@
         </div>
 
         <div class="container-contact1-form-btn">
-          <button class="contact1-form-btn">
+          <button class="contact1-form-btn" type="submit" value="submit">
             <span>
               Send Email
               <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
@@ -53,6 +53,37 @@
       </form>
     </div>
   </div>
+
+
+<?php if(isset($_POST)){
+
+  $name = $_POST['name'];
+  $visitor_email = $_POST['email'];
+  $subject = $_POST['subject'];
+  $message = $_POST['message'];
+
+
+  $email_form = 'noreply@greenvibes.lk';
+
+  $email_subject = 'New Form Submission';
+
+  $email_body = "User Name: $name.\n".
+                  "User Email: $email.\n".
+                      "Subject: $visitor_email.\n".
+                          "User Message: $message.\n";
+
+  $to = 'srimal.cyber@gmail.com';
+
+  $headers = "From: $email_from \r\n";
+
+  $headers .= "Reply-To: $visitor_email \r \n";
+
+  mail($to,$email_suject,$email_body,$headers);
+
+  header("Location: contact.php");
+} ?>
+
+
   <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
   <script src="vendor/bootstrap/js/popper.js"></script>
