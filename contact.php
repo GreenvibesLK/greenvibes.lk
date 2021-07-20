@@ -43,7 +43,7 @@
         </div>
 
         <div class="container-contact1-form-btn">
-          <button class="contact1-form-btn" type="submit" value="submit">
+          <button class="contact1-form-btn" type="submit" value="submit" name="submit">
             <span>
               Send Email
               <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
@@ -81,7 +81,8 @@
   mail($to,$email_suject,$email_body,$headers);
 
   header("Location: contact.php");
-} ?>
+} 
+?>
 
 
   <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
