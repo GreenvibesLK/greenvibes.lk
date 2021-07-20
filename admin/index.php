@@ -25,7 +25,7 @@
 			$hashed_password = sha1($password);
 
 			// prepare database query
-			$query = "SELECT * FROM user 
+			$query = "SELECT * FROM admin 
 						WHERE email = '{$email}' 
 						AND password = '{$hashed_password}' 
 						LIMIT 1";
@@ -40,7 +40,7 @@
 				$_SESSION['user_id'] = $user['id'];
 				$_SESSION['first_name'] = $user['first_name'];
 				// updating last login
-				$query = "UPDATE user SET last_login = NOW() ";
+				$query = "UPDATE admin SET last_login = NOW() ";
 				$query .= "WHERE id = {$_SESSION['user_id']} LIMIT 1";
 
 				$result_set = mysqli_query($connection, $query);
