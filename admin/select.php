@@ -9,17 +9,17 @@
             <tr>  
                      <th width="2%" >Id</th>  
                      <th width="8%">Blog Date</th>  
-                     <th width="20%">Blog Title</th>
-                     <th width="20%">Blog S-title</th>
-                     <th width="5%">Online</th>
-                     <th width="5%">Delete</th>
+                     <th width="15%">Blog Title</th>
+                     <th width="15%">Blog S-title</th>
+                     <th width="2%">Online</th>
+                     <th width="2%">Delete</th>
                 </tr>';  
 
  $rows = mysqli_num_rows($result);
  if($rows > 0)  
  {  
  while($row = mysqli_fetch_array($result))  
-      {    if($row["online"]==1){ $check = 'checked'; } else { $check = '';}
+      {    if($row["online"]==1){ $check = 'checked'; } else { $check = 'Unchecked';}
            $output .= '  
                 <tr>
                      <td align="center"><a href="edit-post.php?blog_id='.$row["blog_id"].'">'.$row["blog_id"].'</td>  
@@ -30,7 +30,7 @@
 
                      <td class="blog_short_title" data-id3="'.$row["blog_id"].'">'.$row["blog_short_title"].'</td>
 
-                     <td>'.$row["online"].'<input data-id4="'.$row["blog_id"].'" contenteditable class="form-check-input" type="checkbox" name="online" value="1"'.$check.' ></td>
+                     <td>'.$row["online"].'<input class="online" data-id4="'.$row["blog_id"].'" type="checkbox" name="online" value="1"'.$check.'></td>
 
                      <td><button type="button" name="delete_btn" data-id5="'.$row["blog_id"].'" class="btn btn-xs btn-danger btn_delete">x</button></td>  
                 </tr>  
