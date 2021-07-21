@@ -27,13 +27,13 @@
             echo "<h4>Greenvibes News Panel</h4>";
             break;
           case "pblog":
-            echo "<h4>Greenvibes Planting News Panel</h4>";
+            echo "<h4>Planting News Panel</h4>";
             break;
           case "eblog":
-            echo "<h4>Greenvibes Edu News Panel</h4>";
+            echo "<h4>Edu News Panel</h4>";
             break;
           case "iblog":
-            echo "<h4>Greenvibes Innovation News Panel</h4>";
+            echo "<h4>Innovation News Panel</h4>";
             break;
           default:
             echo "null!";
@@ -64,7 +64,8 @@ $(document).ready(function(){
     $(document).on('click', '#btn_add', function(){  
         var blog_date = $('#blog_date').text();  
         var blog_title = $('#blog_title').text(); 
-        var blog_short_title = $('#blog_short_title').text(); 
+        var blog_short_title = $('#blog_short_title').text();
+        var online = $('#online').text();
         // if(blog_date == '')  
         // {  
         //     alert("Enter Blog Date");  
@@ -78,7 +79,7 @@ $(document).ready(function(){
         $.ajax({  
             url:"insert.php",  
             method:"POST",  
-            data:{blog_date:blog_date, blog_title:blog_title, blog_short_title:blog_short_title},  
+            data:{blog_date:blog_date, blog_title:blog_title, blog_short_title:blog_short_title, online:online},  
             dataType:"text",  
             success:function(data)  
             {  
@@ -116,9 +117,16 @@ $(document).ready(function(){
         var id = $(this).data("id3");  
         var blog_short_title = $(this).text();  
         edit_data(id,blog_short_title, "blog_short_title");  
+    }); 
+
+    $(document).on('blur', '.online', function(){  
+        var id = $(this).data("id4");  
+        var online = $(this).text();  
+        edit_data(id,online, "online");  
     });  
+
     $(document).on('click', '.btn_delete', function(){  
-        var id=$(this).data("id4");  
+        var id=$(this).data("id5");  
         if(confirm("Are you sure you want to delete this?"))  
         {  
             $.ajax({  

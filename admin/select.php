@@ -11,6 +11,7 @@
                      <th width="8%">Blog Date</th>  
                      <th width="20%">Blog Title</th>
                      <th width="20%">Blog S-title</th>
+                     <th width="5%">Online</th>
                      <th width="5%">Delete</th>
                 </tr>';  
 
@@ -27,9 +28,12 @@
 
                      <td class="blog_title" data-id2="'.$row["blog_id"].'" contenteditable>'.$row["blog_title"].'</td> 
 
-                     <td class="blog_short_title" data-id3="'.$row["blog_id"].'" contenteditable>'.$row["blog_short_title"].'</td>
+                     <td class="blog_short_title" data-id3="'.$row["blog_id"].'">'.$row["blog_short_title"].'</td>
 
-                     <td><button type="button" name="delete_btn" data-id4="'.$row["blog_id"].'" class="btn btn-xs btn-danger btn_delete">x</button></td>  
+                     <td><input data-id4="'.$row["blog_id"].'" contenteditable class="online form-check-input" size="30px"type="checkbox" name="online" value="1" id="flexCheckChecked" 
+                          if($row["online"]==1){ echo checked }></td>
+
+                     <td><button type="button" name="delete_btn" data-id5="'.$row["blog_id"].'" class="btn btn-xs btn-danger btn_delete">x</button></td>  
                 </tr>  
            ';  
       }  
@@ -41,6 +45,8 @@
                 <td id="blog_title" contenteditable></td> 
 
                 <td id="blog_short_title" contenteditable></td>
+
+                <td id="online" contenteditable></td>
 
                 <td><button type="button" name="btn_add" id="btn_add" class="btn btn-xs btn-success">+</button></td>  
            </tr>  
@@ -57,6 +63,8 @@
 					<td id="blog_title" contenteditable></td>
 
                          <td id="blog_short_title" contenteditable></td>
+
+                         <td id="online" contenteditable></td>
 
 					<td><button type="button" name="btn_add" id="btn_add" class="btn btn-xs btn-success">+</button></td>  
 			   </tr>';  
