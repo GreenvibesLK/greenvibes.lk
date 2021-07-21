@@ -19,7 +19,7 @@
  if($rows > 0)  
  {  
  while($row = mysqli_fetch_array($result))  
-      {  
+      {    if($row["online"]==1){ $check = 'checked'; } else { $check = '';}
            $output .= '  
                 <tr>
                      <td align="center"><a href="edit-post.php?blog_id='.$row["blog_id"].'">'.$row["blog_id"].'</td>  
@@ -30,8 +30,7 @@
 
                      <td class="blog_short_title" data-id3="'.$row["blog_id"].'">'.$row["blog_short_title"].'</td>
 
-                     <td><input data-id4="'.$row["blog_id"].'" contenteditable class="online form-check-input" size="30px"type="checkbox" name="online" value="1" id="flexCheckChecked" 
-                          if($row["online"]==1){ echo checked }></td>
+                     <td>'.$row["online"].'<input data-id4="'.$row["blog_id"].'" contenteditable class="form-check-input" type="checkbox" name="online" value="1"'.$check.' ></td>
 
                      <td><button type="button" name="delete_btn" data-id5="'.$row["blog_id"].'" class="btn btn-xs btn-danger btn_delete">x</button></td>  
                 </tr>  
