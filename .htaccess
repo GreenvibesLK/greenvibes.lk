@@ -1,18 +1,18 @@
 RewriteEngine On
 
-#RewriteRule ^home$ index.php [NC,L]
-#RewriteRule ^about$ about-us.php [NC,L]
-#RewriteRule ^our-group$ our-group.php [NC,L]
-#RewriteRule ^services$ services.php [NC,L]
-#RewriteRule ^projects$ projects.php [NC,L]
-#RewriteRule ^clients$ clients.php [NC,L]
-#RewriteRule ^resources$ resources.php [NC,L]
-#RewriteRule ^news$ news.php [NC,L]
-#RewriteRule ^contact$ contact.php [NC,L]
+RewriteRule ^home$ index.php [NC,L]
+RewriteRule ^about-us$ about-us.php [NC,L]
+RewriteRule ^our-group$ our-group.php [NC,L]
+RewriteRule ^services$ services.php [NC,L]
+RewriteRule ^projects$ projects.php [NC,L]
+RewriteRule ^clients$ clients.php [NC,L]
+RewriteRule ^resources$ resources.php [NC,L]
+RewriteRule ^news$ news.php [NC,L]
+RewriteRule ^contact$ contact.php [NC,L]
 
 
  #Diabling Diectory Browse
- Options -Indexes
+ #Options -Indexes
 
  #Custom Error Page
  # ErrorDocument 404 /404.php
