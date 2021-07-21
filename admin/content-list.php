@@ -18,7 +18,7 @@
         <div class="container">
             <br /> 
             <br />
-             <a href="admin_area.php" type="button" class="btn btn-primary" style="float:right;">BACK TO ADMIN</a>
+             <a href="admin-area.php" type="button" class="btn btn-primary" style="float:right;">BACK TO ADMIN</a>
 			<br /> <?php 
                     $heading = $table;
 
