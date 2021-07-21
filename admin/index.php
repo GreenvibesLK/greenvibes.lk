@@ -48,7 +48,7 @@
 				verify_query($result_set);
 
 				// redirect to users.php
-				header('Location: admin_area.php');
+				header('Location: admin-area.php');
 			} else {
 				// user name and password invalid
 				$errors[] = 'Invalid Username / Password';
@@ -56,12 +56,25 @@
 		}
 	}
 ?>
-<?php require_once('inc/header.php'); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Admin Area</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body class="content">
+
         <div class="row justify-content-center align-items-center" style="height:100vh;">
             <div>
               <h3 align="center">Admin Login</h3>
                 <div class="card" >
-                    <div class="card-body" style="width: 400px;">
+                    <div class="card-body">
                         <form action="index.php" method="post" autocomplete="off">
                             <div class="form-group">
                             	<?php 
