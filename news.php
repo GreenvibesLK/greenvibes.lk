@@ -75,7 +75,7 @@
     </div>
 <div class="navigation">
   <nav>
-      <a href="index.php"><img src="img/GreenvibesLK.png">  </a>
+      <a href="/"><img src="img/GreenvibesLK.png">  </a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>

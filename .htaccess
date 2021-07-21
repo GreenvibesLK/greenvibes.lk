@@ -12,7 +12,7 @@ RewriteRule ^contact$ contact.php [NC,L]
 
 
  #Diabling Diectory Browse
- #Options -Indexes
+ Options -Indexes
 
  #Custom Error Page
- # ErrorDocument 404 /404.php
+ErrorDocument 404 /404.php
