@@ -55,7 +55,8 @@
   </div>
 
 
-<?php if(isset($_POST)){
+<?php 
+  if(isset($_POST['submit'])){
 
   $name = $_POST['name'];
   $visitor_email = $_POST['email'];
@@ -68,19 +69,17 @@
   $email_subject = 'New Form Submission';
 
   $email_body = "User Name: $name.\n".
-                  "User Email: $email.\n".
+                  "User Email: $visitor_email.\n".
                       "Subject: $visitor_email.\n".
                           "User Message: $message.\n";
 
   $to = 'srimal.cyber@gmail.com';
 
-  $headers = "From: $email_from \r\n";
+  $headers = "From: $email_form \r\n";
 
   $headers .= "Reply-To: $visitor_email \r \n";
 
-  mail($to,$email_suject,$email_body,$headers);
-
-  header("Location: contact.php");
+  mail($to,$email_subject,$email_body,$headers);
 } 
 ?>
 
