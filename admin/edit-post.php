@@ -49,11 +49,8 @@
         <h1 class="blog_title" id="blog_date" data-id2=<?php echo $blog_id?> contenteditable><?php echo $blog_title; ?></h1>
 
         <p class="newsdate" id="blog_date" contenteditable>DATE POSTED :<?php echo $blog_date ?></p><br>
-
-        <?php echo '<img src="img/'.$blog_img.'" alt="">'?>
-
+        <img src="../img/<?php echo $blog_img ?>" >
         <?php echo $blog_text; ?> <br>
-        <img src="../img/<?php echo $blog_img ?>" classalt="">
 
         <h5>Published by :  <?php echo $created_by; ?></h5>
 
@@ -64,7 +61,7 @@
             }
 
             img{
-                width: 60%;
+                width: 80%;
             }
         </style>
     </div>
