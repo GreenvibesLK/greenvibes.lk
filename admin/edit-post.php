@@ -74,7 +74,7 @@ $(document).ready(function(){
     function fetch_data()  
     { 
         $.ajax({
-            url:"select.php?table=<?php echo $table ?>",
+            url:"select.php",
             method:"POST",
             success:function(data){
                 $('#live_data').html(data);  
@@ -87,6 +87,7 @@ $(document).ready(function(){
         var blog_date = $('#blog_date').text();  
         var blog_title = $('#blog_title').text(); 
         var blog_short_title = $('#blog_short_title').text(); 
+        var blog_img = $('#blog_img').text(); 
         // if(blog_date == '')  
         // {  
         //     alert("Enter Blog Date");  
@@ -98,9 +99,9 @@ $(document).ready(function(){
             return false;  
         }  
         $.ajax({  
-            url:"insert.php?table=<?php echo $table ?>",  
+            url:"insert.php",  
             method:"POST",  
-            data:{blog_date:blog_date, blog_title:blog_title, blog_short_title:blog_short_title},  
+            data:{blog_date:blog_date, blog_title:blog_title, blog_short_title:blog_short_title, blog_img:blog_img},  
             dataType:"text",  
             success:function(data)  
             {  
@@ -144,7 +145,7 @@ $(document).ready(function(){
         if(confirm("Are you sure you want to delete this?"))  
         {  
             $.ajax({  
-                url:"delete.php?table=<?php echo $table ?>",  
+                url:"delete.php",  
                 method:"POST",  
                 data:{id:id},  
                 dataType:"text",  
