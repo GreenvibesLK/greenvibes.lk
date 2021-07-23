@@ -49,7 +49,14 @@
         <h1 class="blog_title" id="blog_date" data-id2=<?php echo $blog_id?> contenteditable><?php echo $blog_title; ?></h1>
 
         <p class="newsdate" id="blog_date" contenteditable>DATE POSTED :<?php echo $blog_date ?></p><br>
-        <img src="../img/<?php echo $blog_img ?>" >
+        <img src="../img/<?php echo $blog_img ?>"  >
+        <form action="edit-post.php?blog_id=<?php echo $blog_id ?>" method="post" enctype="multipart/form-data">
+                Select image to upload:
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload Image" name="submit">
+        </form>
+
+
         <?php echo $blog_text; ?> <br>
 
         <h5>Published by :  <?php echo $created_by; ?></h5>
