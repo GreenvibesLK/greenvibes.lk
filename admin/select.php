@@ -30,7 +30,7 @@
 
                      <td class="blog_short_title" data-id3="'.$row["blog_id"].'" contenteditable>'.$row["blog_short_title"].'</td>
 
-                     <td class="online" data-id4="'.$row["online"].'" contenteditable>'.$row["online"].'</td>
+                     <td class="online" data-id4="'.$row["online"].'" contenteditable>'.$row["online"].'<input type="checkbox" class="online" data-id4="'.$row["online"].'value="true" '.$check.'></td>
 
                      <td><button type="button" name="delete_btn" data-id5="'.$row["blog_id"].'" class="btn btn-xs btn-danger btn_delete">x</button></td>  
                 </tr>  
