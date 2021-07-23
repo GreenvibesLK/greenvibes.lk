@@ -53,6 +53,7 @@
         <?php echo '<img src="img/'.$blog_img.'" alt="">'?>
 
         <?php echo $blog_text; ?> <br>
+        <img src="../img/<?php echo $blog_img ?>" classalt="">
 
         <h5>Published by :  <?php echo $created_by; ?></h5>
 
@@ -60,6 +61,10 @@
         <style>
             h1 {
                 width: 100%;
+            }
+
+            img{
+                width: 60%;
             }
         </style>
     </div>
