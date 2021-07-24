@@ -53,6 +53,7 @@
         <form action="edit-post.php?blog_id=<?php echo $blog_id ?>" method="post" enctype="multipart/form-data">
                 Select image to upload:
                 <input type="file" name="image" id="">
+                <p>Note: JPEG files less than 1MB only</p>
                 <input type="submit" name="submit">
         </form>
 
@@ -75,6 +76,11 @@
 </div>
 <?php 
   
+  $errors = array();
+
+
+
+  
   if (isset($_POST['submit'])) {
     
     $file_name = $_FILES['image']['name'];
@@ -90,10 +96,7 @@
           echo '<script> alert("File Uplaoded !") </script>';
      $sql = "UPDATE {$table} SET blog_img= '{$file_name}' WHERE blog_id={$blog_id} ";
 
-     if(mysqli_query($connect, $sql))  
-          {  
-              echo $sql;
-          }
+    mysqli_query($connect, $sql);
 
 
     }
