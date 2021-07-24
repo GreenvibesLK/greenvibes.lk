@@ -52,8 +52,8 @@
         <img src="../img/<?php echo $blog_img ?>"  >
         <form action="edit-post.php?blog_id=<?php echo $blog_id ?>" method="post" enctype="multipart/form-data">
                 Select image to upload:
-                <input type="file" name="fileToUpload" id="fileToUpload">
-                <input type="submit" value="Upload Image" name="submit">
+                <input type="file" name="image" id="">
+                <input type="submit" name="submit">
         </form>
 
 
@@ -73,5 +73,26 @@
         </style>
     </div>
 </div>
+<?php 
+  
+  if (isset($_POST['submit'])) {
+    
+    $file_name = $_FILES['image']['name'];
+    $file_type = $_FILES['image']['type'];
+    $file_size = $_FILES['image']['size'];
+    $temp_name = $_FILES['image']['tmp_name'];
+
+    $upload_to = '../img/blog_img/';
+
+    $file_uploaded = move_uploaded_file($temp_name, $upload_to . $file_name); 
+
+    if($file_uploaded){
+          echo '<script> alert("File Uplaoded !") </script>';
+     $sql = "UPDATE {$table} SET blog_img= '{$file_name}' WHERE blog_id={$blog_id} ";
+
+     echo $sql;
+    }
+  }
+?>
 
 <?php require_once('inc/fetch.php'); ?>
