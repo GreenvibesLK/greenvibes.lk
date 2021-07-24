@@ -49,7 +49,7 @@
         <h1 class="blog_title" id="blog_date" data-id2=<?php echo $blog_id?> contenteditable><?php echo $blog_title; ?></h1>
 
         <p class="newsdate" id="blog_date" contenteditable>DATE POSTED :<?php echo $blog_date ?></p><br>
-        <img src="../img/<?php echo $blog_img ?>"  >
+        <img src="../img/blog_img/<?php echo $blog_img ?>"  >
         <form action="edit-post.php?blog_id=<?php echo $blog_id ?>" method="post" enctype="multipart/form-data">
                 Select image to upload:
                 <input type="file" name="image" id="">
@@ -90,7 +90,12 @@
           echo '<script> alert("File Uplaoded !") </script>';
      $sql = "UPDATE {$table} SET blog_img= '{$file_name}' WHERE blog_id={$blog_id} ";
 
-     echo $sql;
+     if(mysqli_query($connect, $sql))  
+          {  
+              echo $sql;
+          }
+
+
     }
   }
 ?>
