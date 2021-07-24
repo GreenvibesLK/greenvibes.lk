@@ -101,7 +101,7 @@
     <div class="newsblog">
         <h1><?php echo $blog_title; ?></h1>
         <p class="newsdate">DATE POSTED :<?php echo $blog_date ?></p><br>
-        <?php echo '<img src="img/'.$blog_img.'" alt="">'?>
+        <?php echo '<img src="img/blog_img/'.$blog_img.'" alt="">'?>
         <?php echo $blog_text; ?> <br>
         <h5>Published by :  <?php echo $created_by; ?></h5>
     </div>
