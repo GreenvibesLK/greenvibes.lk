@@ -50,12 +50,24 @@
 
         <p class="newsdate" id="blog_date" contenteditable>DATE POSTED :<?php echo $blog_date ?></p><br>
         <img src="../img/blog_img/<?php echo $blog_img ?>"  >
+
         <form action="edit-post.php?blog_id=<?php echo $blog_id ?>" method="post" enctype="multipart/form-data">
                 Select image to upload:
                 <input type="file" name="image" id="">
                 <p>Note: JPEG files less than 1MB only</p>
                 <input type="submit" name="submit">
         </form>
+        <?php 
+
+          if(!empty($errors)){
+            foreach ($errors as $error) {
+             echo '<div class="errors">';
+             echo '- '. $error;
+            }
+             echo '</div>';
+          }
+
+         ?>
 
 
         <?php echo $blog_text; ?> <br>
@@ -71,6 +83,14 @@
             img{
                 width: 80%;
             }
+
+            .errors{
+              color: red;
+            }
+
+            input{
+              padding: 5px 20px;
+            }
         </style>
     </div>
 </div>
@@ -80,7 +100,7 @@
 
 
 
-  
+
   if (isset($_POST['submit'])) {
     
     $file_name = $_FILES['image']['name'];
@@ -88,15 +108,31 @@
     $file_size = $_FILES['image']['size'];
     $temp_name = $_FILES['image']['tmp_name'];
 
-    $upload_to = '../img/blog_img/';
+    $upload_to = '../img/blog_img/'; 
 
-    $file_uploaded = move_uploaded_file($temp_name, $upload_to . $file_name); 
 
-    if($file_uploaded){
+    //checking the file type
+    if($file_type != 'image/jpeg'){
+      $errors[] = 'Only JPEG files are allowed.';
+    }
+
+
+    //checking file size
+    if ($file_size > 1000000){
+      $errors[] = 'File size should less than 1MB.';
+    }
+
+    if(empty($errors)){
+      $file_uploaded = move_uploaded_file($temp_name, $upload_to . $file_name); 
+    }
+
+
+    if(isset($file_uploaded)){
           echo '<script> alert("File Uplaoded !") </script>';
-     $sql = "UPDATE {$table} SET blog_img= '{$file_name}' WHERE blog_id={$blog_id} ";
+            
+          $sql = "UPDATE {$table} SET blog_img= '{$file_name}' WHERE blog_id={$blog_id} ";
 
-    mysqli_query($connect, $sql);
+          mysqli_query($connect, $sql);
 
 
     }
