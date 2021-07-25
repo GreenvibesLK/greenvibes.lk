@@ -239,6 +239,10 @@ div.latest_column:hover{
 	  transition: 0.5s;
 		}
 
+		div.latest_column:hover{
+			padding-top: 60px;
+		}
+
 		div.latest_column h5 {
 			padding: 2px 5px;
 			background-color: #50C878;
