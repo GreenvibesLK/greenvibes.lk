@@ -6,7 +6,8 @@
 <?php require_once('inc/header.php'); ?>
   <div class="text-box">
         <h1>Who We Are ?</h1>
-        <p>ShareTheMeal is a crowdfunding smartphone application to fight global hunger through the United Nations World Food Programme (WFP).</p>
+        <p>Just as machines have extended man's mechanical power and his convenience and comfort, Information Technology as <br>commonly pictured by computers, 
+is extending man's mind or brain or intellectual power. </p>
         <!-- <a href="" class="visit-btn">Visit us</a> -->
         </div>
     </section>
