@@ -1,4 +1,4 @@
-<img src="img/GreenvibesLK white.png" width="300" align="right">
+<img src="img/GreenvibesLK white.png" width="300" align="right"> <br>
 <h2 align="center">We are Greenvibes Technologies. A team with a diversified and forward thinking capabilities in the field of software with the elements of creating unique solutions. </h2>
 
 Just as machines have extended man's mechanical power and his convenience and comfort, Information Technology as commonly pictured by computers, 
