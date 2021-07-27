@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="icon" href="img/gv logo favicon green.svg">
-    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title><?php echo $title; ?>Greenvibes</title>
