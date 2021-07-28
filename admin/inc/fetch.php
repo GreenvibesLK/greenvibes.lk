@@ -78,6 +78,24 @@ $(document).ready(function(){
         var online = $(this).text();  
         edit_data(id,online, "online");  
     });  
+  
+    $(document).on('blur', '.blog_text', function(){  
+        var id = $(this).data("id6");  
+        var blog_text = $(this).text();  
+        edit_data(id,blog_text, "blog_text");  
+    });  
+  
+    $(document).on('blur', '.link', function(){  
+        var id = $(this).data("id7");  
+        var link = $(this).text();  
+        edit_data(id,link, "link");  
+    });  
+  
+    $(document).on('blur', '.download', function(){  
+        var id = $(this).data("id8");  
+        var download = $(this).text();  
+        edit_data(id,download, "download");  
+    });  
 
     $(document).on('click', '.btn_delete', function(){  
         var id=$(this).data("id5");  
