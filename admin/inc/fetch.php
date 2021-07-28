@@ -17,6 +17,9 @@ $(document).ready(function(){
         var blog_title = $('#blog_title').text(); 
         var blog_short_title = $('#blog_short_title').text();
         var online = $('#online').text();
+        var blog_text = $('#blog_text').text();
+        var link = $('#link').text();
+        var download = $('#download').text();
         // if(blog_date == '')  
         // {  
         //     alert("Enter Blog Date");  
