@@ -33,7 +33,7 @@ $(document).ready(function(){
         $.ajax({  
             url:"insert.php",  
             method:"POST",  
-            data:{blog_date:blog_date, blog_title:blog_title, blog_short_title:blog_short_title, online:online},  
+            data:{blog_date:blog_date, blog_title:blog_title, blog_short_title:blog_short_title, online:online, blog_text:blog_text, link:link, download:download},  
             dataType:"text",  
             success:function(data)  
             {  
